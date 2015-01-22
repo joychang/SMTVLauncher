@@ -1,0 +1,154 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="TitleButton">
+        <item name="android:textSize">@dimen/sm_28</item>
+        <item name="android:textColorHighlight">@color/white</item>
+        <item name="android:textColor">@drawable/title_textcolor_selector</item>
+        <item name="android:background">@drawable/title_button_selector</item>
+    </style>
+
+    <style name="Exitdialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <!--
+             <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        边框
+        <item name="android:windowIsFloating">true</item>
+        是否浮现在activity之上
+        <item name="android:windowIsTranslucent">false</item>
+        半透明
+        <item name="android:windowNoTitle">true</item>
+        无标题
+        <item name="android:backgroundDimEnabled">false</item>
+    -->
+    <style name="DialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground"> @android:color/transparent </item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="Dialog_Fullscreen">
+       <item name="android:windowBackground"> @android:color/transparent </item> 
+       <item name="android:windowFullscreen">true</item> 
+       <item name="android:windowNoTitle">true</item>
+       <!-- <item name="android:backgroundDimEnabled">true</item> --><!--昏暗效果-->   
+    </style>  
+    
+    <style name="bottom_TitleButton">
+        <item name="android:textSize">@dimen/sm_24</item>
+        <!--
+             <item name="android:textColor">@drawable/title_textcolor_selector</item>
+        <item name="android:background">@drawable/title_button_selector</item>
+        -->
+    </style>
+
+    <!-- 播放栏显示隐藏动画 -->
+    <style name="AnimationTimeFade">
+        <item name="android:windowEnterAnimation">@anim/time_controler_down</item>
+        <item name="android:windowExitAnimation">@anim/time_controler_up</item>
+    </style>
+    
+    <style name="AnimationFade">
+        <item name="android:windowEnterAnimation">@anim/controler_up</item>
+        <item name="android:windowExitAnimation">@anim/controler_down</item>
+    </style>
+
+    <style name="AnimationMenu">
+
+        <!-- PopupWindow左右弹出的效果 -->
+        <item name="android:windowEnterAnimation">@anim/menu_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/menu_fade_out</item>
+
+        <!-- VOD -->
+    </style>
+
+    <style name="marqueeText">
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+    </style>
+
+    <style name="search_keybord_full">
+        <item name="android:textSize">@dimen/sm_28</item>
+        <item name="android:textColor">@drawable/menu_textcolor_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/keypad_button_selector</item>
+        <item name="android:layout_width">@dimen/sm_60</item>
+        <item name="android:layout_height">@dimen/sm_60</item>
+        <item name="android:layout_margin">@dimen/sm_3</item>
+        <item name="android:onClick">doClick</item>
+    </style>
+
+    <style name="search_keybord_t9">
+        <item name="android:layout_width">@dimen/sm_60</item>
+        <item name="android:layout_height">@dimen/sm_60</item>
+        <item name="android:layout_margin">@dimen/sm_3</item>
+        <item name="android:onClick">doClick</item>
+    </style>
+    <!-- vod -->
+
+    <style name="CustomProgressStyle" parent="@android:style/Widget.ProgressBar.Large">
+        <item name="android:minWidth">@dimen/sm_120</item>
+        <item name="android:maxWidth">@dimen/sm_120</item>
+        <item name="android:minHeight">@dimen/sm_120</item>
+        <item name="android:maxHeight">@dimen/sm_120</item>
+    </style>
+
+    <style name="anim_appwall">
+        <item name="@android:windowEnterAnimation">@anim/setbig</item>
+        <item name="@android:windowExitAnimation">@anim/setsmall</item>
+    </style>
+    
+    <style name="WiFiDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    
+   <style name="MyCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+	   <item name="android:button">@drawable/check_selector</item>
+   </style>
+   
+   
+       <style name="user_leftbar_full">
+        <item name="android:textSize">@dimen/sm_28</item>
+        <item name="android:textColor">@drawable/member_textcolor_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:background">@drawable/button_focus</item>
+        <item name="android:layout_width">@dimen/sm_199</item>
+        <item name="android:layout_height">@dimen/sm_80</item>
+        <item name="android:focusable">true</item>
+    </style>
+    <style name="DialogAnim">
+        <item name="android:windowEnterAnimation">@anim/dialog_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_fade_out</item>
+    </style>
+</resources>

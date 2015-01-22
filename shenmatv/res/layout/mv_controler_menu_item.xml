@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/sm_80"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_menu_item"
+        android:layout_width="@dimen/sm_300"
+        android:layout_height="@dimen/sm_80"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/sm_20"
+        style="@style/marqueeText"
+        android:textColor="@drawable/live_channel_item_textcolor_selector"
+        android:textSize="@dimen/sm_30" />
+</RelativeLayout>

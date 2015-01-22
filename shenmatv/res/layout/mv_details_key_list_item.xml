@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/lv_text"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sm_55"
+        android:layout_margin="@dimen/sm_3"
+        android:background="@drawable/live_channel_list_item_bg"
+        android:ellipsize="marquee"
+        android:gravity="center_vertical"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingLeft="@dimen/sm_5"
+        android:singleLine="true"
+        android:textColor="@drawable/live_channel_item_textcolor_selector"
+        android:textSize="@dimen/sm_24" />
+
+</RelativeLayout>

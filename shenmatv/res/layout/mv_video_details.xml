@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/video_details_bg"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/sm_32" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/iv_details_poster_shadow"
+                android:layout_width="@dimen/sm_10"
+                android:layout_height="@dimen/sm_374"
+                android:layout_marginLeft="@dimen/sm_145"
+                android:src="@drawable/show"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/iv_details_poster"
+                android:layout_width="@dimen/sm_267"
+                android:layout_height="@dimen/sm_405"
+                android:scaleType="fitStart" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/sm_35"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/sm_15" >
+
+                    <TextView
+                        android:id="@+id/tv_details_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sm_28" />
+
+                    <TextView
+                        android:id="@+id/tv_details_year"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/sm_10"
+                        android:textColor="@color/detail_point"
+                        android:textSize="@dimen/sm_22" />
+
+                    <TextView
+                        android:id="@+id/tv_details_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/sm_160"
+                        android:ellipsize="end"
+                        android:maxWidth="@dimen/sm_320"
+                        android:singleLine="true"
+                        android:textColor="@color/detail_point"
+                        android:textSize="@dimen/sm_18" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/sm_30"
+                    android:layout_marginLeft="@dimen/sm_15"
+                    android:layout_marginTop="@dimen/sm_52" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:text="导演："
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sm_22" />
+
+                    <TextView
+                        android:id="@+id/tv_details_director"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/sm_10"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sm_22" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/sm_30"
+                    android:layout_marginLeft="@dimen/sm_15"
+                    android:layout_marginTop="@dimen/sm_8" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="主演："
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sm_22" />
+
+                    <TextView
+                        android:id="@+id/tv_details_actors"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/sm_10"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sm_22" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/sm_30"
+                    android:layout_marginLeft="@dimen/sm_15"
+                    android:layout_marginTop="@dimen/sm_8" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="年代："
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sm_22" />
+
+                    <TextView
+                        android:id="@+id/tv_details_playTimes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/sm_10"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sm_22" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/sm_30"
+                    android:layout_marginLeft="@dimen/sm_15"
+                    android:layout_marginTop="@dimen/sm_8" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="类型："
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sm_22" />
+
+                    <TextView
+                        android:id="@+id/tv_details_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/sm_10"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sm_22" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/sm_30"
+                    android:layout_marginLeft="@dimen/sm_15"
+                    android:layout_marginTop="@dimen/sm_8" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="地区："
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sm_22" />
+
+                    <TextView
+                        android:id="@+id/tv_details_area"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/sm_10"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sm_22" />
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="@dimen/sm_634"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/sm_15"
+                    android:padding="@dimen/sm_3"
+                    android:scrollbars="none" >
+
+                    <RadioGroup
+                        android:id="@+id/rg_video_details_resources"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/sm_43"
+                        android:gravity="left"
+                        android:orientation="horizontal" />
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/sm_8"
+                    android:gravity="bottom" >
+
+                    <Button
+                        android:id="@+id/b_details_play"
+                        android:layout_width="@dimen/sm_126"
+                        android:layout_height="@dimen/sm_52"
+                        android:layout_marginRight="@dimen/sm_15"
+                        android:background="@drawable/video_details_play_selector"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/b_details_replay"
+                        android:layout_width="@dimen/sm_126"
+                        android:layout_height="@dimen/sm_52"
+                        android:layout_marginRight="@dimen/sm_15"
+                        android:background="@drawable/video_details_replay_selector"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/b_details_choose"
+                        android:layout_width="@dimen/sm_126"
+                        android:layout_height="@dimen/sm_52"
+                        android:layout_marginRight="@dimen/sm_15"
+                        android:background="@drawable/video_details_xuanji_selector"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/b_details_colection"
+                        android:layout_width="@dimen/sm_126"
+                        android:layout_height="@dimen/sm_52"
+                        android:layout_marginRight="@dimen/sm_15"
+                        android:background="@drawable/video_details_zhuiju_selector"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/b_details_favicon"
+                        android:layout_width="@dimen/sm_126"
+                        android:layout_height="@dimen/sm_52"
+                        android:layout_marginRight="@dimen/sm_15"
+                        android:background="@drawable/video_details_favicon_selector"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/b_details_introduce"
+                        android:layout_width="@dimen/sm_126"
+                        android:layout_height="@dimen/sm_52"
+                        android:layout_marginRight="@dimen/sm_15"
+                        android:background="@drawable/video_details_introduce_n_selector"
+                        android:textColor="@color/white"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/sm_10"
+                    android:src="@drawable/line760" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <include
+                android:id="@+id/details_recommend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/sm_16"
+                layout="@layout/mv_video_details_recommend" />
+
+            <include
+                android:id="@+id/details_key_arts"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="@dimen/sm_30"
+                layout="@layout/mv_video_details_choose_arts"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/details_video_introduce"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="@dimen/sm_30"
+                layout="@layout/mv_video_details_introduce"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffffff</color>
+    <color name="blue">#ff0000ff</color>
+    <color name="dark">#ffb2b2b2</color>
+    <color name="green">#ffb2ffb2</color>
+    <color name="detail_point">#ffffaa00</color>
+    <color name="detail_main_text">#ff999999</color>
+    <color name="black">#ff000000</color>
+    <color name="red">#ffee2200</color>
+    <color name="blue_user">#ff00a8ff</color>
+    <color name="dark_404040">#ff404040</color>
+    <color name="title_fouse">#ff007aff</color>
+    <color name="title_fouse_n">#CE7900</color>
+    <color name="title_top">#81d7ff</color>
+    <color name="title_top_n">#ffffffff</color>
+    <color name="player_back">#384e63</color>
+    <color name="configuration_turn_on">#ffffff</color>
+    <color name="configuration_turn_off">#a9a9a9</color>
+    <color name="text_focus">#1ea5fa</color>
+</resources>

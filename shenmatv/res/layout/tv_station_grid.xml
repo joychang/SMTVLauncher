@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/video_details_bg" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/sm_89"
+        android:paddingTop="@dimen/sm_15" >
+
+        <ImageView
+            android:layout_width="@dimen/sm_220"
+            android:layout_height="@dimen/sm_80"
+            android:layout_marginLeft="@dimen/sm_40"
+            android:src="@drawable/tv_station" />
+
+        <GridView
+            android:id="@+id/tvstation_gv"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="@dimen/sm_6"
+            android:layout_marginLeft="@dimen/sm_90"
+            android:listSelector="@drawable/white_border"
+            android:numColumns="5"
+            android:paddingTop="@dimen/sm_13"
+            android:scrollbars="none"
+            android:smoothScrollbar="true"
+            android:stretchMode="columnWidth" />
+    </LinearLayout>
+</FrameLayout>

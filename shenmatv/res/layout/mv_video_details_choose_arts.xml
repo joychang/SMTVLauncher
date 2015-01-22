@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/sm_333"
+    android:background="@drawable/video_detail_key_bg"
+    android:gravity="bottom"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/sm_5"
+    android:paddingLeft="@dimen/sm_20"
+    android:paddingRight="@dimen/sm_20">
+    
+    
+    
+    <ImageView 
+        android:layout_width="@dimen/sm_120"
+        android:layout_height="@dimen/sm_270"
+        android:background="@drawable/video_detail_key_xuanji"
+        />
+	
+    <ListView
+        android:id="@+id/details_key_list"
+        android:layout_width="0.0px"
+        android:layout_height="@dimen/sm_270"
+        android:layout_weight="1.0"
+        android:nextFocusLeft="@id/details_key_list"
+        android:nextFocusRight="@+id/details_key_grid"
+        android:paddingTop="@dimen/sm_40" />
+    
+        <ImageView 
+        android:layout_width="@dimen/sm_15"
+        android:layout_height="@dimen/sm_270"
+        android:background="@drawable/video_detail_key_line"
+        />
+    
+
+    <GridView
+        android:id="@+id/details_key_grid"
+        android:layout_width="0.0px"
+        android:layout_height="@dimen/sm_270"
+        android:layout_weight="1.0"
+        android:nextFocusLeft="@id/details_key_list"
+        android:horizontalSpacing="@dimen/sm_10"
+        android:numColumns="4"
+        android:paddingLeft="@dimen/sm_10"
+        android:nextFocusRight="@id/details_key_grid"
+        android:paddingTop="@dimen/sm_40"
+        android:verticalSpacing="@dimen/sm_10" />
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/background_play_item_bg_f"  android:state_focused="true"/>
+    <item android:drawable="@drawable/background_play_item_bg_f"  android:state_selected="true"/>
+    <item android:drawable="@drawable/background_play_item_bg_n"  android:state_focused="false"/>
+    <item android:drawable="@drawable/background_play_item_bg_n"  android:state_selected="false"/>
+    <item android:drawable="@drawable/background_play_item_bg_n"/>
+<!--     <item android:drawable="@drawable/background_play_item_bg_f"  android:state_selected="true"/> -->
+
+</selector>

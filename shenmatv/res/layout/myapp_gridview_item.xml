@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="@dimen/sm_190"
+        android:layout_height="@dimen/sm_160"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/myapp_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/myapp_gridview_item_iv"
+                android:layout_width="@dimen/sm_70"
+                android:layout_height="@dimen/sm_70"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/sm_24"
+                android:src="@drawable/icon" />
+
+            <ImageView
+                android:id="@+id/myapp_gridview_item_love_iv"
+                android:layout_width="@dimen/sm_42"
+                android:layout_height="@dimen/sm_42"
+                android:layout_marginLeft="@dimen/sm_40"
+                android:layout_marginTop="@dimen/sm_1"
+                android:src="@drawable/app_favorite"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/myapp_gridview_item_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sm_20"
+            android:ellipsize="marquee"
+            android:gravity="center_horizontal"
+            android:paddingLeft="@dimen/sm_20"
+            android:paddingRight="@dimen/sm_20"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sm_20" />
+
+        <TextView
+            android:id="@+id/myapp_gridview_item_flag_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

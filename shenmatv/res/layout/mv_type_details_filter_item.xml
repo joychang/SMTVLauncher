@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/sm_180"
+    android:layout_height="40.0px"
+    android:background="@drawable/filter_bg_selector" >
+
+    <TextView
+        android:id="@+id/filter_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sm_24" />
+
+    <ImageView
+        android:id="@+id/filter_gou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/sm_5"
+        android:src="@drawable/fliter_gou"
+        android:visibility="invisible" />
+
+</FrameLayout>

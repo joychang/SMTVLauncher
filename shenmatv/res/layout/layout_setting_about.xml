@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/setting_about"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:layout_width="@dimen/sm_220"
+        android:layout_height="@dimen/sm_80"
+        android:layout_marginLeft="@dimen/sm_12"
+        android:layout_marginTop="@dimen/sm_16"
+        android:src="@drawable/setting_about" />
+
+    <RelativeLayout
+        android:layout_width="@dimen/sm_850"
+        android:layout_height="@dimen/sm_380"
+        android:layout_centerInParent="true" >
+
+        <ImageView
+            android:id="@+id/about_iv"
+            android:layout_width="@dimen/sm_850"
+            android:layout_height="@dimen/sm_380"
+            android:gravity="center"
+            android:padding="@dimen/sm_10" />
+
+        <TextView
+            android:id="@+id/about_update_tv"
+            android:layout_width="@dimen/sm_200"
+            android:layout_height="@dimen/sm_55"
+            android:layout_marginRight="@dimen/sm_18"
+            android:background="@drawable/clear_button_selector"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:onClick="startCheckUpdate"
+            android:text="@string/about_update_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sm_24" />
+    </RelativeLayout>
+
+</RelativeLayout>

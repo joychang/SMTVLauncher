@@ -1,0 +1,104 @@
+/*
+Uploadify
+Copyright (c) 2012 Reactive Apps, Ronnie Garcia
+Released under the MIT License <http://www.opensource.org/licenses/mit-license.php> 
+*/
+
+body {
+	font: 13px Arial, Helvetica, Sans-serif,微软雅黑;
+	color: #FFFFFF;
+	background: url("../images/bg.png");
+}
+
+#filedrag {
+	/*text-align: center;
+	padding: 1em 0;
+	margin: 1em 0;
+	color: #797979;
+	border: 2px dashed #555;
+	border-radius: 7px;
+	cursor: default;
+	font-size: 18px;
+	height: 80px;*/
+}
+
+.fileB{
+/*	border: 2px dashed #555;*/
+}
+
+
+#filedrag.hover {
+	color: #f00;
+	border-color: #f00;
+	border: 2px dashed #555;
+}
+
+.uploadify {
+	position: relative;
+	margin-bottom: 1em;
+	margin:0 auto;
+}
+.uploadify-button {
+	margin:0 auto;
+	background: url("../images/yuanchengcaokPC-btn.png") no-repeat;
+	width: 281px;
+	height: 52px;
+	text-align: center;
+	color: #1d1500;
+	font-size: 20px;
+	list-style: 10px;
+}
+
+.uploadify:hover .uploadify-button {
+	background: url("../images/yuanchengcaokPC-btn.png") no-repeat;
+	width: 281px;
+	height: 52px;
+	text-align: center;
+}
+.uploadify-button.disabled {
+	background-color: #D0D0D0;
+	color: #808080;
+}
+.uploadify-queue {
+	margin-bottom: 1em;
+}
+.uploadify-queue-item {
+	/*background-color: #F5F5F5;*/
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	font: 11px Verdana, Geneva, sans-serif;
+	margin-top: 5px;
+	max-width: 100%;
+	padding: 10px;
+	font-size: 20px;
+}
+.uploadify-error {
+	background-color: #FDE5DD !important;
+}
+.uploadify-queue-item .cancel a {
+	background: url('../img/uploadify-cancel.png') 0 0 no-repeat;
+	float: right;
+	height:	16px;
+	text-indent: -9999px;
+	width: 16px;
+}
+.uploadify-queue-item.completed {
+	background-color: #E5E5E5;
+}
+
+.uploadify-progress {
+	background:url("../images/jindudi.png");
+	width:140px;
+	height:9px;
+	margin-top: 30px;
+	float: left;
+	margin-left: -5px;
+	margin-bottom: 0px;
+}
+
+.uploadify-progress-bar {
+	background:url("../images/jindu.png");
+	height:9px;
+	width: 1px;
+}

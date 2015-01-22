@@ -1,0 +1,507 @@
+com.forcetech.android.ForceTV:
+    public native int stop()
+com.forcetech.android.MainUrl
+com.forcetech.android.MdUrl
+com.shenma.tvlauncher.AboutActivity:
+    164:164:protected void initView()
+    169:169:protected void loadViewLayout()
+    174:174:protected void findViewById()
+    179:179:protected void setListener()
+com.shenma.tvlauncher.AppManageActivity:
+    private static final int REMOVE_FROM_FAV
+    private static final int ADD_TO_FAV
+    private static final java.lang.String TAG
+    164:164:protected void loadViewLayout()
+com.shenma.tvlauncher.BaseActivity:
+    private static final java.lang.String TAG
+    protected abstract void initView()
+    protected abstract void loadViewLayout()
+    protected abstract void findViewById()
+    protected abstract void setListener()
+    141:142:protected void openActivity(java.lang.String)
+    145:152:protected void openActivity(java.lang.String,android.os.Bundle)
+    180:202:protected void showExitDialog()
+    234:260:private void showVolumeToast(int,int,int)
+    265:273:protected void handleFatalError()
+    279:287:protected void handleOutmemoryError()
+com.shenma.tvlauncher.BaseActivity$1
+com.shenma.tvlauncher.BaseActivity$2
+com.shenma.tvlauncher.BaseActivity$3
+com.shenma.tvlauncher.BaseActivity$4
+com.shenma.tvlauncher.BuildConfig
+com.shenma.tvlauncher.ClearActivity:
+    43:43:protected void loadViewLayout()
+com.shenma.tvlauncher.HomeActivity:
+    private java.lang.Boolean isHasFouse
+    288:300:private void initTitle(int)
+com.shenma.tvlauncher.HomeActivity$WindowMessageID
+com.shenma.tvlauncher.OtherActivity:
+    125:125:protected void loadViewLayout()
+com.shenma.tvlauncher.R
+com.shenma.tvlauncher.R$anim
+com.shenma.tvlauncher.R$array
+com.shenma.tvlauncher.R$attr
+com.shenma.tvlauncher.R$color
+com.shenma.tvlauncher.R$dimen
+com.shenma.tvlauncher.R$drawable
+com.shenma.tvlauncher.R$id
+com.shenma.tvlauncher.R$layout
+com.shenma.tvlauncher.R$menu
+com.shenma.tvlauncher.R$string
+com.shenma.tvlauncher.R$style
+com.shenma.tvlauncher.SettingActActvity:
+    17:17:protected void initView()
+    22:22:protected void loadViewLayout()
+    27:27:protected void findViewById()
+    32:32:protected void setListener()
+com.shenma.tvlauncher.SettingRemoteActivity:
+    82:82:protected void loadViewLayout()
+    92:92:protected void setListener()
+com.shenma.tvlauncher.SettingWallpaperActivity:
+    104:104:protected void loadViewLayout()
+com.shenma.tvlauncher.SettingWifiActivity:
+    116:116:protected void loadViewLayout()
+com.shenma.tvlauncher.SplashActivity:
+    private static final int GET_INFO_SUCCESS
+    private static final int DETECTION_NET
+    protected static final java.lang.String TAG
+    197:197:protected void loadViewLayout()
+    215:215:protected void setListener()
+    228:228:protected void initView()
+com.shenma.tvlauncher.TvStationActivity:
+    92:92:protected void loadViewLayout()
+com.shenma.tvlauncher.UserActivity:
+    private net.tsz.afinal.FinalHttp fh
+com.shenma.tvlauncher.adapter.FragAdapter:
+    17:18:public FragAdapter(android.support.v4.app.FragmentManager)
+com.shenma.tvlauncher.adapter.TopicAdapter:
+    private int index
+    92:92:private int getResPX(int)
+com.shenma.tvlauncher.adapter.TvStationAdapter:
+    33:34:public void setData(java.util.List)
+com.shenma.tvlauncher.adapter.UserTypeAdapter:
+    58:60:public void changData(java.util.ArrayList)
+    63:66:public void setAppData(java.util.List)
+    68:74:private void setVideos(java.util.ArrayList)
+com.shenma.tvlauncher.adapter.WallpaperAdapter:
+    35:36:public void setData(java.util.List)
+com.shenma.tvlauncher.anim.Rotate3dAnimation
+com.shenma.tvlauncher.application.CrashHandler:
+    private static final java.lang.String TAG
+com.shenma.tvlauncher.application.MyApplication:
+    private static final java.lang.String TAG
+    251:253:protected void _finish()
+com.shenma.tvlauncher.application.MyApplication$Config
+com.shenma.tvlauncher.application.MyVolley:
+    private static final java.lang.String TAG
+    41:43:private MyVolley()
+    59:62:public static com.android.volley.RequestQueue getRequestQueue()
+com.shenma.tvlauncher.db.DatabaseHelper:
+    public static final java.lang.String DATABASE_NAME
+    public static final java.lang.String TABLE_APPLOVES
+    private static final int DATABASE_VERSION
+    66:66:public boolean deleteDatabase(android.content.Context)
+com.shenma.tvlauncher.db.DatabaseOperator:
+    public static final java.lang.String KEY_TITLE
+    public static final java.lang.String KEY_BODY
+    public static final java.lang.String KEY_ROWID
+    public static final java.lang.String KEY_CREATED
+    47:48:public void close()
+com.shenma.tvlauncher.fragment.BaseFragment:
+    protected abstract void loadViewLayout()
+    protected abstract void findViewById()
+    protected abstract void setListener()
+com.shenma.tvlauncher.fragment.RecommendFragment:
+    261:261:private int getPX(int)
+com.shenma.tvlauncher.network.BaseThread:
+    protected static final java.lang.String TAG
+    95:102:public void setPriority(int)
+    137:145:public void interrupt()
+    156:158:public com.shenma.tvlauncher.network.BaseThread$STATE getState()
+com.shenma.tvlauncher.network.ExtHttpStack
+com.shenma.tvlauncher.network.NetUtils
+com.shenma.tvlauncher.network.PullXmlParser:
+    protected static final java.lang.String TAG
+com.shenma.tvlauncher.network.PullXmlParserThread:
+    protected static final java.lang.String TAG
+com.shenma.tvlauncher.tvback.TVBackActivity:
+    private static final java.lang.String TAG
+    private static final int SCREEN_FULL
+    private static final int SCREEN_DEFAULT
+    private static final int TIME
+    private static final int DURATION_TIME
+    private static final java.lang.String POWER_LOCK
+    private static final int TOUCH_NONE
+    private static final int TOUCH_VOLUME
+    private static final int TOUCH_BRIGHTNESS
+    private static final int TOUCH_SEEK
+    1413:1417:private void updataMenu()
+com.shenma.tvlauncher.tvback.TVBackActivity$MenuType
+com.shenma.tvlauncher.tvback.TVBackActivity$WindowMessageID
+com.shenma.tvlauncher.tvback.adapter.ProgramAdapter:
+    79:82:public static void setViewSate()
+com.shenma.tvlauncher.tvlive.TVLivePlayer:
+    private static final java.lang.String TAG
+    private static final int DELAY_NEXT_TIME
+    private static final int TURN_LEFT
+    private static final int TRUN_RIGHT
+    private static final java.lang.String CLASS_TYPE
+    private static final java.lang.String PROGRAM_TYPE
+    private static final java.lang.String FILE_NAME
+    public static final java.lang.String ENGER_FILE_NAME
+    public static final java.lang.String DATA_FILE_NAME
+    public static final java.lang.String NEWS_FILE_NAME
+    private static final java.lang.String POWER_LOCK
+    private static final int PROGRESSBAR_VISIBLE
+    private static final int PROGRESSBAR_GONE
+    private static final int EVENT_PLAY
+    private static final int CLOSE_LINE_DIALOG
+    private static final int START_SPEED
+    private static final int TOUCH_NONE
+    private static final int TOUCH_VOLUME
+    private static final int TOUCH_BRIGHTNESS
+    private static final int TOUCH_SEEK
+    1011:1015:private void recycle()
+    1369:1386:public java.lang.String getMacAddress()
+    1391:1406:public static java.lang.String getCPUSerial()
+    1410:1426:public java.lang.String callCmd(java.lang.String,java.lang.String)
+com.shenma.tvlauncher.tvlive.TVLivePlayer$Config
+com.shenma.tvlauncher.tvlive.TVLivePlayer$MyThread
+com.shenma.tvlauncher.tvlive.adapter.ContentAdapter:
+    71:71:public int getCurrentPosition()
+    75:77:public void setCurrentPosition(int)
+com.shenma.tvlauncher.tvlive.adapter.SourceAdapter
+com.shenma.tvlauncher.tvlive.domain.PtoP
+com.shenma.tvlauncher.tvlive.domain.PtoPCollection
+com.shenma.tvlauncher.tvlive.network.DownloadResourse:
+    public static final int UPDATE
+com.shenma.tvlauncher.tvlive.network.DownloadResourse$FileName:
+    static final java.lang.String PATH_ROOT
+    static final java.lang.String PATH_WEPOWER
+    static final java.lang.String WEPOWER_SO
+    static final java.lang.String ZIP_VERSION
+    static final java.lang.String ZIP_NAME
+    static final java.lang.String LETV_SO
+    static final java.lang.String PLAY_JAR
+    static final java.lang.String WEIBAO
+com.shenma.tvlauncher.tvlive.network.LiveConstant:
+    public static com.shenma.tvlauncher.tvlive.parsexml.NetMediaCollection liveDatas
+    public static final int CHANNEL_CLASS
+    public static final int CHANNEL_TYPE
+    public static final int TVLINK_TYPE
+    public static final int DOWNLOAD_XML_DONE
+    public static final int PLAYER_VIDEO
+    public static final int APPLICATION_EXCEPTION
+    public static final int SWICH_LINE
+    public static final int HIDE_VIEW
+    public static final int DISAPPEAR
+    public static final int SELECT_CHANNE
+    public static final int DO_NOT_CONNECT_NET
+    public static final int DOWNLOAD_ENTER_XML
+    public static final int DOWNLOAD_IMG_XML
+    public static final int DOWNLOAD_NEWS_XML
+    public static final int START_NEWS
+    public static final int PLAY_NEXT
+    public static final int PAUSE_NEWS
+    public static final int EPG_VIEW
+    public static final int REPLAY
+    public static final int MINU_NUTE
+    public static final java.lang.String ZBLIVE
+    public static final java.lang.String NEWS
+    public static final java.lang.String LOGO
+    public static final java.lang.String EPG
+    public static final java.lang.String LETV
+    public static final java.lang.String GENERAL_TV
+    public static final java.lang.String LIVE_TIME
+    public static final java.lang.String LIVE_KEY3
+    public static final java.lang.String LIVE_KEY1
+    public static java.lang.String MAC
+    public static final int PTOPCOLLECTION_SIZE
+    public static final int FAVORITE_SIZE
+    public static final int DOWNLOAD_PTOP_XML
+    public static final int START_PTOP
+    public static final int KILL_PTOP
+    public static final int FAVORITE
+    public static final int PORT
+    public static final java.lang.String CONNECT_SUCCESS
+    public static final int START_PLAY
+    public static final int START_THREAD
+    public static final java.lang.String CLOSE_MUILT
+    public static final int CONNECT_TIME
+    public static final int CONNECT_SUCC
+    public static final int CONNECT_FAIL
+    public static final int PLUGS_END
+    public static final int PLUGS_START
+    5:5:public LiveConstant()
+com.shenma.tvlauncher.tvlive.network.NetWorkHelper
+com.shenma.tvlauncher.tvlive.network.ServerUtil
+com.shenma.tvlauncher.tvlive.network.ThreadPoolManager
+com.shenma.tvlauncher.tvlive.parsexml.DonLodeParseXmlWifiTask
+com.shenma.tvlauncher.tvlive.parsexml.EPGS:
+    18:19:public void setEpgs(java.util.ArrayList)
+com.shenma.tvlauncher.tvlive.parsexml.NetMedia:
+    29:30:public void setChannlesArrayList(java.util.ArrayList)
+    65:65:public java.lang.String getSource()
+com.shenma.tvlauncher.tvlive.parsexml.NetMediaCollection:
+    18:19:public void setNetMediaList(java.util.ArrayList)
+com.shenma.tvlauncher.tvlive.parsexml.PrintLog
+com.shenma.tvlauncher.tvlive.parsexml.PtoPMainInterface:
+    23:24:public void setMainItems(java.util.ArrayList)
+com.shenma.tvlauncher.tvlive.parsexml.onConnectDoneListener
+com.shenma.tvlauncher.ui.FixedSpeedScroller:
+    14:15:public FixedSpeedScroller(android.content.Context)
+    39:39:public int getmDuration()
+com.shenma.tvlauncher.ui.MyPageTransformer
+com.shenma.tvlauncher.ui.ZoomOutPageTransformer
+com.shenma.tvlauncher.utils.AppManager:
+    29:42:public void install(java.lang.String,com.shenma.tvlauncher.utils.StatusCallBack)
+com.shenma.tvlauncher.utils.AppManager$1
+com.shenma.tvlauncher.utils.BlurUtils:
+    5:5:public BlurUtils()
+com.shenma.tvlauncher.utils.Constant:
+    public static final java.lang.String SHENMASP
+    public static final int TYPE_ZJ
+    public static final int TYPE_SC
+    public static final int TYPE_LS
+    public static final java.lang.String WEPOWER_URL
+    public static final java.lang.String ENTER_URL
+    public static final java.lang.String ENTER_URL_MAC
+    public static final java.lang.String TVPLAY
+    public static final java.lang.String COMIC
+    public static final java.lang.String TVSHOW
+    public static final java.lang.String MOVIE
+    public static final java.lang.String TEACH
+    public static final java.lang.String DOCUMENTARY
+    public static final java.lang.String VODFILTER
+    public static final java.lang.String VODFILTER_H123
+    public static final java.lang.String TOPIC_URL
+    public static final java.lang.String TOPIC_HEAD_URL
+    public static final java.lang.String VOD_TYPE_ALL
+    public static final java.lang.String VOD_TYPE
+    public static final java.lang.String VOD_TYPE_HAO123
+    public static final java.lang.String URL_HEAD
+    public static final java.lang.String POST_PHP
+    public static final java.lang.String AK
+    public static final java.lang.String SK
+    public static final java.lang.String TVLIVE
+    public static final java.lang.String TVLIVE_DIY
+    public static final java.lang.String TVSTATIONS
+    public static final java.lang.String WALLPAPER
+    12:12:public Constant()
+com.shenma.tvlauncher.utils.ImageUtil:
+    27:27:public ImageUtil()
+    32:42:public static android.graphics.Bitmap compressImage(android.graphics.Bitmap)
+    47:77:public static android.graphics.Bitmap comp(android.graphics.Bitmap)
+    82:90:public static android.graphics.Bitmap zoomBitmap(android.graphics.Bitmap,int,int)
+    114:131:public static android.graphics.Bitmap getRoundedCornerBitmap(android.graphics.Bitmap,float)
+    136:161:public static android.graphics.Bitmap createReflectionImageWithOrigin(android.graphics.Bitmap)
+com.shenma.tvlauncher.utils.Logger:
+    10:10:public Logger()
+com.shenma.tvlauncher.utils.LruCacheUtils:
+    43:51:public void clearCache()
+    85:92:public synchronized void removeImageCache(java.lang.String)
+com.shenma.tvlauncher.utils.MainUrl
+com.shenma.tvlauncher.utils.Md5Encoder:
+    15:15:public Md5Encoder()
+    19:35:public static java.lang.String getIP()
+    65:72:public static java.lang.String getEncode2Key(java.lang.String)
+com.shenma.tvlauncher.utils.RemoteServer:
+    public static final int REMOTE_INSTALLATION_START_INSTALL
+    public static final int REMOTE_INSTALLATION_INSTALL_RESULT
+com.shenma.tvlauncher.utils.ScaleAnimEffect:
+    private float fromAlpha
+    private float toAlpha
+    31:37:public android.view.animation.Animation alphaAnimation(float,float,long,long)
+    90:93:public android.view.animation.Animation createAlphaAnimation()
+    106:109:public void setAlphaAttributs(float,float,long)
+com.shenma.tvlauncher.utils.StatusCallBack
+com.shenma.tvlauncher.utils.TVLiveUtils:
+    15:15:public TVLiveUtils()
+    244:245:public static java.lang.String getBase64Code(java.lang.String,long)
+com.shenma.tvlauncher.utils.Utils:
+    com.wepower.live.parser.IPlay iplay
+    private static final java.lang.String DEF_ZH_PATTERN
+    private static final java.lang.String TAG
+    75:75:public Utils()
+    84:90:public static android.graphics.Bitmap readBitMap(android.content.Context,int)
+    189:195:public static void installApk(java.io.File,android.content.Context)
+    349:372:public static boolean isValidLink(java.lang.String)
+    382:411:public static java.lang.String getMd5Pass(java.lang.String)
+    551:558:public static java.lang.String getTimeToSrc(java.lang.String)
+    601:611:private void updateTextViewWithTimeFormat(android.widget.TextView,int)
+    622:643:public static boolean copyApkFromAssets(android.content.Context,java.lang.String,java.lang.String)
+    653:653:public static java.lang.String getFilename(java.lang.String)
+    669:691:public static java.util.List getVideoBottomDatas(java.util.List,int,java.lang.Boolean)
+com.shenma.tvlauncher.utils.Utils$1
+com.shenma.tvlauncher.utils.VideoPlayUtils:
+    4:4:public VideoPlayUtils()
+com.shenma.tvlauncher.view.AutoScrollTextView:
+    30:32:public AutoScrollTextView(android.content.Context)
+    49:65:public void init(android.view.WindowManager)
+com.shenma.tvlauncher.view.ExitDialog:
+    130:130:private android.app.ActivityManager getSystemService(java.lang.String)
+com.shenma.tvlauncher.view.ExitFullDialog:
+    24:25:public ExitFullDialog(android.content.Context)
+    28:29:public ExitFullDialog(android.content.Context,boolean,android.content.DialogInterface$OnCancelListener)
+    32:33:public ExitFullDialog(android.content.Context,int)
+com.shenma.tvlauncher.view.ExitFullDialog$Builder
+com.shenma.tvlauncher.view.ExitFullDialog$Builder$1
+com.shenma.tvlauncher.view.ExitFullDialog$Builder$2
+com.shenma.tvlauncher.view.HomeDialog:
+    25:26:public HomeDialog(android.content.Context)
+    29:30:public HomeDialog(android.content.Context,boolean,android.content.DialogInterface$OnCancelListener)
+com.shenma.tvlauncher.view.HomeDialog$Builder:
+    72:73:public com.shenma.tvlauncher.view.HomeDialog$Builder setMessage(int)
+    82:83:public com.shenma.tvlauncher.view.HomeDialog$Builder setTitle(int)
+    103:105:public com.shenma.tvlauncher.view.HomeDialog$Builder setPositiveButton(int,android.content.DialogInterface$OnClickListener)
+    127:129:public com.shenma.tvlauncher.view.HomeDialog$Builder setNeutralButton(int,android.content.DialogInterface$OnClickListener)
+com.shenma.tvlauncher.view.LiveLoadingDialog:
+    41:42:public void setLoadingMsg(java.lang.String)
+    45:46:public void setMsgGone()
+com.shenma.tvlauncher.view.LoadingDialog:
+    27:30:public LoadingDialog(android.content.Context,int,java.lang.String)
+com.shenma.tvlauncher.view.PlayerProgressBar:
+    68:69:private void setText()
+com.shenma.tvlauncher.view.Reflect3DImage:
+    16:16:public Reflect3DImage()
+com.shenma.tvlauncher.view.SmtvToast
+com.shenma.tvlauncher.view.VideoView:
+    71:75:public void setVideoScale(int,int)
+    111:128:public int resolveAdjustedSize(int,int)
+com.shenma.tvlauncher.view.WiFiDialog:
+    21:22:public WiFiDialog(android.content.Context)
+    25:26:public WiFiDialog(android.content.Context,boolean,android.content.DialogInterface$OnCancelListener)
+com.shenma.tvlauncher.view.WiFiDialog$Builder:
+    63:65:public com.shenma.tvlauncher.view.WiFiDialog$Builder setPositiveButton(int,android.content.DialogInterface$OnClickListener)
+    87:89:public com.shenma.tvlauncher.view.WiFiDialog$Builder setNeutralButton(int,android.content.DialogInterface$OnClickListener)
+com.shenma.tvlauncher.vod.SearchActivity:
+    private static final int PAGESIZE
+    private static final int REFRESH_ADAPTER
+com.shenma.tvlauncher.vod.SearchActivity$WindowMessageID
+com.shenma.tvlauncher.vod.VideoPlayerActivity:
+    private static final java.lang.String TAG
+    private static final int TIME
+    private static final int DURATION_TIME
+    private android.widget.ImageView iv_media_menu
+    private static final int TOUCH_NONE
+    private static final int TOUCH_VOLUME
+    private static final int TOUCH_BRIGHTNESS
+    private static final int TOUCH_SEEK
+    1559:1576:private java.lang.String getActionName(int)
+com.shenma.tvlauncher.vod.VideoPlayerActivity$WindowMessageID
+com.shenma.tvlauncher.vod.VodDetailsActivity:
+    private android.widget.ImageView iv_details_sharpness
+    private java.lang.String sourcetype
+com.shenma.tvlauncher.vod.VodDetailsActivity$WindowMessageID
+com.shenma.tvlauncher.vod.VodTypeActivity:
+    private static final int PAGESIZE
+com.shenma.tvlauncher.vod.VodTypeActivity$WindowMessageID
+com.shenma.tvlauncher.vod.adapter.DetailsBottomGridAdapter:
+    30:32:public void changData(java.util.ArrayList)
+com.shenma.tvlauncher.vod.adapter.SearchTypeAdapter$ViewHolder:
+    private android.widget.ImageView spuerHd
+com.shenma.tvlauncher.vod.adapter.VodtypeAdapter$ViewHolder:
+    private android.widget.ImageView spuerHd
+com.shenma.tvlauncher.vod.dao.VodDao:
+    89:90:public void deleteApps(com.shenma.tvlauncher.vod.db.Album)
+com.shenma.tvlauncher.wifi.AccessPoint:
+    private static final java.lang.String KEY_DETAILEDSTATE
+    private static final java.lang.String KEY_WIFIINFO
+    private static final java.lang.String KEY_SCANRESULT
+    private static final java.lang.String KEY_CONFIG
+    public static final int SECURITY_NONE
+    public static final int SECURITY_WEP
+    public static final int SECURITY_PSK
+    public static final int SECURITY_EAP
+    140:155:public AccessPoint(android.content.Context,android.os.Bundle)
+    158:164:public void saveWifiState(android.os.Bundle)
+    261:267:public void update(int,int)
+    270:284:public void update(com.shenma.tvlauncher.wifi.AccessPoint)
+    287:287:public final boolean isWpsAvailable()
+    299:302:public int getLevelOnAct()
+    306:331:public java.lang.String getLevelString()
+    335:343:private int calculateSignalLevel(int)
+    347:347:public android.net.wifi.WifiConfiguration getConfig()
+    351:351:public android.net.wifi.WifiInfo getInfo()
+    355:355:public android.net.NetworkInfo$DetailedState getState()
+    430:430:public java.lang.String getBssid()
+    442:442:public com.shenma.tvlauncher.wifi.AccessPoint$PskType getPskType()
+    450:450:public android.net.NetworkInfo$DetailedState getmState()
+    460:467:protected void generateOpenNetworkConfig()
+com.shenma.tvlauncher.wifi.IPUtil:
+    3:3:public IPUtil()
+    5:6:public static void main(java.lang.String[])
+    15:21:public static boolean checkMask(java.lang.String)
+    31:44:public static boolean checkIP(java.lang.String)
+    54:65:public static boolean isIP(java.lang.String)
+    77:88:public static boolean check(java.lang.String,java.lang.String,java.lang.String)
+    92:102:private static boolean isIPNum(java.lang.String)
+    106:119:private static int[] changeToInt(java.lang.String)
+    123:128:private static int toInt(java.lang.String)
+    132:139:public static int getNetmaskLength(java.lang.String)
+    148:157:public static boolean checkHost255(java.lang.String,java.lang.String)
+com.shenma.tvlauncher.wifi.SWifiManager:
+    private static final int WIFI_RESCAN_INTERVAL_MS
+    public static final int GOTO_CONNECT_PRE_SSID
+    private static final int CONNECT_PRE_SSID
+    public static final int SEND_MSG_TO_STATUSBAR
+    private static final int REMOVE_NOTIFATION
+    private android.content.IntentFilter mFilter
+    public static final java.lang.String NET_ACTION
+    public static final java.lang.String NET_ACTION_MESSAGE
+    public static final int WIFI_STATE_DISABLING
+    public static final int WIFI_STATE_DISABLED
+    public static final int WIFI_STATE_ENABLING
+    public static final int WIFI_STATE_ENABLED
+    public static final int WIFI_STATE_UNKNOWN
+    public static final int DISABLED_UNKNOWN_REASON
+    public static final int DISABLED_DNS_FAILURE
+    public static final int DISABLED_DHCP_FAILURE
+    public static final int DISABLED_AUTH_FAILURE
+    182:185:public java.lang.String getCurrentSSID()
+    213:219:public java.lang.String getMac()
+    232:242:public android.content.IntentFilter registerBroadcast()
+    249:250:public void unRegisterBroadcast()
+    262:264:public int getWifiState()
+    280:282:public void closeWifi()
+    291:291:public boolean isWifiEnabled()
+    298:301:public void startWifiScan()
+    307:310:public void stopWifiScan()
+    316:319:public void resumeWifiScan()
+    326:329:public int getCurrentWifiStatus()
+    341:344:public int getDisableReason()
+    402:443:public boolean setHiddenSSID(java.lang.String,int,java.lang.String)
+    478:492:public java.lang.String getMode()
+    516:525:public void setNetWork(com.shenma.tvlauncher.wifi.WifiNetworkBean)
+    592:597:public boolean wifiIsConnect()
+    606:629:public com.shenma.tvlauncher.wifi.WifiNetworkBean getWifiNetWork()
+    638:644:public java.util.List haveConfiguration()
+    654:660:public boolean haveConfiguration(java.lang.String)
+    748:755:private int getNetmaskLength(java.lang.String)
+    759:764:private int toInt(java.lang.String)
+    768:781:private int[] changeToInt(java.lang.String)
+    796:800:public void sendMsg(android.os.Message,int)
+    803:807:public void sendMsgToStatusbar(android.os.Message)
+com.shenma.tvlauncher.wifi.SWifiManager$Scanner:
+    720:723:void resume()
+    726:728:void forceScan()
+    731:733:void pause()
+com.shenma.tvlauncher.wifi.SWifiManager$Status
+com.shenma.tvlauncher.wifi.WifiAdapter:
+    37:38:public void setData(java.util.List)
+    86:87:protected void onListItemClick(android.widget.ListView,android.view.View,int,long)
+    93:95:public void showInfo()
+com.shenma.tvlauncher.wifi.WifiApSettingService:
+    public boolean isSetApEnableSucceed
+    public static final int SECURE_TYPE_WPA
+    public static final int SECURE_TYPE_WPA2
+    public static final int SECURE_TYPE_OPEN
+com.shenma.tvlauncher.wifi.WifiConfigSet
+com.shenma.tvlauncher.wifi.WifiEnabler
+com.shenma.tvlauncher.wifi.WifiEnabler$1
+com.shenma.tvlauncher.wifi.WifiNetworkBean
+com.shenma.tvlauncher.wifi.WifiNetworkSetting:
+    25:25:public android.net.LinkProperties getmLinkProperties()
+    36:48:public void setIP(java.lang.String,int)
+    56:63:public void setDns(java.lang.String)
+    70:77:public void setGateway(java.lang.String)

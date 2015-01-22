@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/setting_wifi">
+
+    <ImageView
+        android:layout_width="@dimen/sm_220"
+        android:layout_height="@dimen/sm_80"
+        android:layout_marginLeft="@dimen/sm_12"
+        android:layout_marginTop="@dimen/sm_16"
+        android:src="@drawable/wifi_settings" />
+
+    <LinearLayout
+        android:id="@+id/main_rl"
+        android:layout_width="@dimen/sm_850"
+        android:layout_height="@dimen/sm_425"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="@dimen/sm_240"
+                android:layout_height="@dimen/sm_52"
+                android:layout_marginLeft="@dimen/sm_40"
+                android:layout_marginTop="@dimen/sm_20"
+                android:background="@drawable/wifi_title" />
+
+            <TextView
+                android:id="@+id/wifi_ap_tv"
+                android:layout_width="@dimen/sm_120"
+                android:layout_height="@dimen/sm_55"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/sm_40"
+                android:layout_marginTop="@dimen/sm_20"
+                android:background="@drawable/clear_button_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/set_wifi_ap"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sm_24" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/wifi_setting_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="@dimen/sm_30"
+            android:clickable="true"
+            android:divider="@drawable/list_divider"
+            android:focusable="true"
+            android:listSelector="@drawable/selector_list_item"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+</RelativeLayout>

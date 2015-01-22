@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/video_details_bg" >
+
+    <ImageView
+        android:layout_width="@dimen/sm_220"
+        android:layout_height="@dimen/sm_80"
+        android:layout_marginLeft="@dimen/sm_12"
+        android:layout_marginTop="@dimen/sm_16"
+        android:src="@drawable/huodongzhuanqu" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/sm_20"
+        android:text="活动即将上线"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sm_40" />
+
+</RelativeLayout>

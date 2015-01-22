@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:layout_width="@dimen/sm_150"
+        android:layout_height="@dimen/sm_310"
+        android:layout_marginLeft="@dimen/sm_400"
+        android:layout_marginTop="@dimen/sm_200"
+        android:src="@drawable/exit_horse" />
+
+    <Button
+        android:id="@+id/exit_ok_bt"
+        android:layout_width="@dimen/sm_398"
+        android:layout_height="@dimen/sm_90"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/sm_200"
+        android:layout_marginTop="@dimen/sm_275"
+        android:background="@drawable/exit_bt_bg"
+        android:text="@string/exitdialog_out"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sm_50" />
+
+    <Button
+        android:id="@+id/exit_cancel_bt"
+        android:layout_width="@dimen/sm_398"
+        android:layout_height="@dimen/sm_90"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/exit_ok_bt"
+        android:layout_marginRight="@dimen/sm_200"
+        android:layout_marginTop="@dimen/sm_20"
+        android:background="@drawable/exit_bt_bg"
+        android:text="@string/exitdialog_back"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sm_50" />
+
+</RelativeLayout>

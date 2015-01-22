@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/sm_320"
+    android:layout_height="@dimen/sm_210"
+    android:layout_gravity="center"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="@dimen/sm_320"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/sm_4" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_form_name"
+            android:textSize="@dimen/sm_23" />
+
+        <EditText
+            android:id="@+id/user_name_et"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/sm_31"
+            android:layout_marginLeft="@dimen/sm_20"
+            android:background="@drawable/edit_bg"
+            android:hint="@string/input_username"
+            android:singleLine="true"
+            android:textSize="@dimen/sm_23" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sm_25"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/sm_4" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/sm_31"
+            android:gravity="center_vertical"
+            android:text="@string/wifi_ssid_pass"
+            android:textSize="@dimen/sm_23" />
+
+        <EditText
+            android:id="@+id/user_pass_et"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/sm_31"
+            android:layout_marginLeft="@dimen/sm_20"
+            android:background="@drawable/edit_bg"
+            android:hint="@string/input_password"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textSize="@dimen/sm_23" />
+    </LinearLayout>
+
+</LinearLayout>

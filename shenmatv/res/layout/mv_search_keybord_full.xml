@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            style="@style/search_keybord_full"
+            android:tag="A"
+            android:text="A" />
+
+        <Button
+            style="@style/search_keybord_full"
+            android:tag="B"
+            android:text="B" />
+
+        <Button
+            style="@style/search_keybord_full"
+            android:tag="C"
+            android:text="C" />
+
+        <Button
+            style="@style/search_keybord_full"
+            android:tag="D"
+            android:text="D" />
+
+        <Button
+            style="@style/search_keybord_full"
+            android:tag="E"
+            android:text="E" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            style="@style/search_keybord_full"
+            android:tag="F"
+            android:text="F" />
+
+        <Button
+            style="@style/search_keybord_full"
+            android:tag="G"
+            android:text="G" />
+
+        <Button
+            style="@style/search_keybord_full"
+            android:tag="H"
+            android:text="H" />
+
+        <Button
+            style="@style/search_keybord_full"
+            android:tag="I"
+            android:text="I" />
+
+        <Button
+            style="@style/search_keybord_full"
+            android:tag="J"
+            android:text="J" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            style="@style/search_keybord_full"
+            android:tag="K"
+            android:text="K" />
+
+        <Button
+            style="@style/search_keybord_full"
+            android:tag="L"
+            android:text="L" />
+
+        <Button
+            style="@style/search_keybord_full"
+            android:tag="M"
+            android:text="M" />
+
+        <Button
+            style="@style/search_keybord_full"
+            android:tag="N"
+            android:text="N" />
+
+        <Button
+            style="@style/search_keybord_full"
+            android:tag="O"
+            android:text="O" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            style="@style/search_keybord_full"
+            android:tag="P"
+            android:text="P" />
+
+        <Button
+            style="@style/search_keybord_full"
+            android:tag="Q"
+            android:text="Q" />
+
+        <Button
+            style="@style/search_keybord_full"
+            android:tag="R"
+            android:text="R" />
+
+        <Button
+            style="@style/search_keybord_full"
+            android:tag="S"
+            android:text="S" />
+
+        <Button
+            style="@style/search_keybord_full"
+            android:tag="T"
+            android:text="T" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            style="@style/search_keybord_full"
+            android:tag="U"
+            android:text="U" />
+
+        <Button
+            style="@style/search_keybord_full"
+            android:tag="V"
+            android:text="V" />
+
+        <Button
+            style="@style/search_keybord_full"
+            android:tag="W"
+            android:text="W" />
+
+        <Button
+            style="@style/search_keybord_full"
+            android:tag="X"
+            android:text="X" />
+
+        <Button
+            style="@style/search_keybord_full"
+            android:tag="Y"
+            android:text="Y" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            style="@style/search_keybord_full"
+            android:tag="Z"
+            android:text="Z" />
+
+        <Button
+            style="@style/search_keybord_full"
+            android:tag="0"
+            android:text="0" />
+
+        <Button
+            style="@style/search_keybord_full"
+            android:tag="1"
+            android:text="1" />
+
+        <Button
+            style="@style/search_keybord_full"
+            android:tag="2"
+            android:text="2" />
+
+        <Button
+            style="@style/search_keybord_full"
+            android:tag="3"
+            android:text="3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            style="@style/search_keybord_full"
+            android:tag="4"
+            android:text="4" />
+
+        <Button
+            style="@style/search_keybord_full"
+            android:tag="5"
+            android:text="5" />
+
+        <Button
+            style="@style/search_keybord_full"
+            android:tag="6"
+            android:text="6" />
+
+        <Button
+            style="@style/search_keybord_full"
+            android:tag="7"
+            android:text="7" />
+
+        <Button
+            style="@style/search_keybord_full"
+            android:tag="8"
+            android:text="8" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            style="@style/search_keybord_full"
+            android:tag="9"
+            android:text="9" />
+
+        <ImageButton
+            android:id="@+id/search_keybord_sj"
+            style="@style/search_keybord_t9"
+            android:background="@drawable/keypad_space_selector"
+            />
+        
+        <ImageButton
+            android:id="@+id/search_keybord_sp"
+            style="@style/search_keybord_t9"
+            android:background="@drawable/keypad_ench_selector"
+            />
+        
+        <ImageButton
+            android:id="@+id/search_keybord_full_clear"
+            style="@style/search_keybord_t9"
+            android:background="@drawable/keypad_clear_selector" />
+
+        <ImageButton
+            android:id="@+id/search_keybord_full_del"
+            style="@style/search_keybord_t9"
+            android:background="@drawable/keypad_back_selector" />
+    </LinearLayout>
+
+</LinearLayout>

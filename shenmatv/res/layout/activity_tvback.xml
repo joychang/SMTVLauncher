@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/video_details_bg" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/sm_10"
+        android:paddingLeft="@dimen/sm_35"
+        android:paddingRight="@dimen/sm_35"
+        android:paddingTop="@dimen/sm_20" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:layout_width="@dimen/sm_152"
+                android:layout_height="@dimen/sm_45"
+                android:src="@drawable/sm_logo" />
+
+            <TextView
+                android:id="@+id/tv_back_type_details_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="电视回看"
+                android:textColor="#ffb2b2b2"
+                android:textSize="@dimen/sm_30" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/sm_1"
+            android:layout_marginBottom="@dimen/sm_5"
+            android:layout_marginTop="@dimen/sm_8"
+            android:scaleType="fitXY"
+            android:src="@drawable/line760" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent" >
+
+                <ListView
+                    android:id="@+id/tv_back_channles"
+                    android:layout_width="@dimen/sm_300"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/hao366x180"
+                    android:focusableInTouchMode="true"
+                    android:nextFocusRight="@+id/tv_back_videos" />
+
+                <ImageView
+                    android:layout_width="@dimen/sm_300"
+                    android:layout_height="fill_parent"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/tv_back_300x670" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <LinearLayout
+                    android:layout_width="@dimen/sm_300"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/sm_10"
+                        android:ellipsize="marquee"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:singleLine="true"
+                        android:text="当前频道："
+                        android:textColor="@color/dark"
+                        android:textSize="@dimen/sm_26" />
+
+                    <TextView
+                        android:id="@+id/tv_back_current_channel"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/sm_5"
+                        android:ellipsize="marquee"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sm_22" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/sm_10"
+                        android:ellipsize="marquee"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:singleLine="true"
+                        android:text="当前播放栏目："
+                        android:textColor="@color/dark"
+                        android:textSize="@dimen/sm_26" />
+
+                    <TextView
+                        android:id="@+id/tv_back_current_tv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/sm_5"
+                        android:ellipsize="marquee"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sm_22" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/sm_10"
+                        android:ellipsize="marquee"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:singleLine="true"
+                        android:text="下一个栏目："
+                        android:textColor="@color/dark"
+                        android:textSize="@dimen/sm_26" />
+
+                    <TextView
+                        android:id="@+id/tv_back_next_tv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/sm_5"
+                        android:ellipsize="marquee"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sm_22" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="@dimen/sm_25"
+                    android:orientation="vertical" >
+
+                    <RadioGroup
+                        android:id="@+id/rg_tv_back_weekdays"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/sm_60"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal" >
+
+                         <RadioButton
+                            android:id="@+id/rb_tv_back_rd_1"
+                            android:layout_width="@dimen/sm_100"
+                            android:layout_height="@dimen/sm_60"
+                            android:background="@drawable/tv_back_sunday_selector"
+                            android:button="@null"
+                            android:gravity="center_horizontal"
+                            android:paddingTop="@dimen/sm_25"
+                            android:text=""
+                            android:textColor="@color/detail_point"
+                            android:textSize="@dimen/sm_16" />
+
+                        <RadioButton
+                            android:id="@+id/rb_tv_back_rd_2"
+                            android:layout_width="@dimen/sm_100"
+                            android:layout_height="@dimen/sm_60"
+                            android:layout_marginLeft="@dimen/sm_15"
+                            android:background="@drawable/tv_back_monday_selector"
+                            android:button="@null"
+                            android:gravity="center_horizontal"
+                            android:paddingTop="@dimen/sm_25"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sm_16" />
+
+                        <RadioButton
+                            android:id="@+id/rb_tv_back_rd_3"
+                            android:layout_width="@dimen/sm_100"
+                            android:layout_height="@dimen/sm_60"
+                            android:layout_marginLeft="@dimen/sm_15"
+                            android:background="@drawable/tv_back_tuesday_selector"
+                            android:button="@null"
+                            android:gravity="center_horizontal"
+                            android:paddingTop="@dimen/sm_25"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sm_16" />
+
+                        <RadioButton
+                            android:id="@+id/rb_tv_back_rd_4"
+                            android:layout_width="@dimen/sm_100"
+                            android:layout_height="@dimen/sm_60"
+                            android:layout_marginLeft="@dimen/sm_15"
+                            android:background="@drawable/tv_back_wenesday_seletor"
+                            android:button="@null"
+                            android:gravity="center_horizontal"
+                            android:paddingTop="@dimen/sm_25"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sm_16" />
+
+                        <RadioButton
+                            android:id="@+id/rb_tv_back_rd_5"
+                            android:layout_width="@dimen/sm_100"
+                            android:layout_height="@dimen/sm_60"
+                            android:layout_marginLeft="@dimen/sm_15"
+                            android:background="@drawable/tv_back_thuresday_selector"
+                            android:button="@null"
+                            android:gravity="center_horizontal"
+                            android:paddingTop="@dimen/sm_25"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sm_16" />
+
+                        <RadioButton
+                            android:id="@+id/rb_tv_back_rd_6"
+                            android:layout_width="@dimen/sm_100"
+                            android:layout_height="@dimen/sm_60"
+                            android:layout_marginLeft="@dimen/sm_15"
+                            android:background="@drawable/tv_back_friday_selector"
+                            android:button="@null"
+                            android:gravity="center_horizontal"
+                            android:paddingTop="@dimen/sm_25"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sm_16" />
+
+                        <RadioButton
+                            android:id="@+id/rb_tv_back_rd_7"
+                            android:layout_width="@dimen/sm_100"
+                            android:layout_height="@dimen/sm_60"
+                            android:layout_marginLeft="@dimen/sm_15"
+                            android:background="@drawable/tv_back_saturday_selector"
+                            android:button="@null"
+                            android:gravity="center_horizontal"
+                            android:paddingTop="@dimen/sm_25"
+                            android:text=""
+                            android:textColor="@color/detail_point"
+                            android:textSize="@dimen/sm_16" />
+                    </RadioGroup>
+
+                    <ListView
+                        android:id="@+id/tv_back_videos"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/sm_250"
+                        android:background="@drawable/tv_back_446x406"
+                        android:focusableInTouchMode="true"
+                        android:nextFocusUp="@+id/tv_back_weekdays" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/back_video_blck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@color/black"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:layout_width="@dimen/sm_570"
+        android:layout_height="@dimen/sm_320"
+        android:layout_marginLeft="@dimen/sm_360"
+        android:layout_marginTop="@dimen/sm_70"
+        android:background="@drawable/tv_back_tv" />
+
+    <com.shenma.tvlauncher.view.VideoView
+        android:id="@+id/videoview"
+        android:layout_width="@dimen/sm_550"
+        android:layout_height="@dimen/sm_300"
+        android:layout_marginLeft="@dimen/sm_370"
+        android:layout_marginTop="@dimen/sm_80" />
+
+    <RelativeLayout
+        android:id="@+id/rl_progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="@dimen/sm_120"
+            android:layout_height="@dimen/sm_120"
+            android:layout_centerHorizontal="true"
+            android:indeterminate="false"
+            android:indeterminateDrawable="@drawable/custom_progress_draw" >
+        </ProgressBar>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/progressBar"
+            android:layout_centerHorizontal="true"
+            android:text="@string/loading_tv"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sm_30"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</FrameLayout>

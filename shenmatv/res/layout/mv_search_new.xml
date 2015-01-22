@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/video_details_bg" >
+
+    <LinearLayout
+        android:layout_width="@dimen/sm_400"
+        android:layout_height="fill_parent"
+        android:background="@drawable/member_left_background"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/sm_40"
+        android:paddingLeft="@dimen/sm_30"
+        android:paddingRight="@dimen/sm_40"
+        android:paddingTop="@dimen/sm_40" >
+        <!--
+             <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择拼音首字母速查，如《泰囧》TJ"
+            android:textColor="@color/dark_404040"
+            android:textSize="18.0px" />
+        -->
+
+        <EditText
+            android:id="@+id/search_keybord_input"
+            android:layout_width="@dimen/sm_320"
+            android:layout_height="@dimen/sm_50"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/sm_10"
+            android:background="@drawable/so_box"
+            android:ellipsize="start"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="#ff000000"
+            android:textSize="@dimen/sm_36" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0px"
+            android:layout_weight="1.0" >
+
+            <include
+                android:id="@+id/search_keybord_full_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                layout="@layout/mv_search_keybord_full" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/search_keybord_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="选择拼音首字母速查，如《太极》TJ"
+            android:textColor="@color/detail_point"
+            android:textSize="@dimen/sm_18" />
+
+        <!--
+             <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sm_10"
+            android:gravity="center_horizontal" >
+
+            <ImageButton
+                android:id="@+id/search_keybord_full"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3.0px"
+                android:background="@drawable/full_key_broad_sel" />
+
+            <ImageButton
+                android:id="@+id/search_keybord_t9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3.0px"
+                android:background="@drawable/t9_key_broad_sel" />
+        </LinearLayout>
+        -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sm_25"
+            android:layout_marginTop="@dimen/sm_10"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/type_details_type"
+                android:layout_width="@dimen/sm_150"
+                android:layout_height="@dimen/sm_80"
+                android:src="@drawable/vod_search" />
+
+            <ImageView
+                android:layout_width="@dimen/sm_10"
+                android:layout_height="@dimen/sm_80"
+                android:layout_marginRight="@dimen/sm_5"
+                android:src="@drawable/vod_line35" />
+
+            <!--
+                 <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/search_allline"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sm_30" />
+
+            <ImageView
+                android:layout_width="2.0px"
+                android:layout_height="@dimen/sm_35"
+                android:layout_marginLeft="@dimen/sm_5"
+                android:layout_marginRight="@dimen/sm_5"
+                android:background="#ffb2b2b2" />
+            -->
+
+            <LinearLayout
+                android:id="@+id/search_top_tables"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <!--
+                <TextView
+                    android:id="@+id/search_hot"
+                    android:layout_width="@dimen/sm_80"
+                    android:layout_height="@dimen/sm_35"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="@dimen/sm_20"
+                    android:gravity="center"
+                    android:text="热搜"
+                    android:textColor="@drawable/menu_textcolor_selector"
+                    android:textSize="26.0px" />
+
+                <TextView
+                    android:id="@+id/search_all"
+                    style="@style/search_top"
+                    android:text="全部" />
+
+                <TextView
+                    android:id="@+id/search_film"
+                    style="@style/search_top"
+                    android:text="电影" />
+
+                <TextView
+                    android:id="@+id/search_tv"
+                    style="@style/search_top"
+                    android:text="电视剧" />
+
+                <TextView
+                    android:id="@+id/search_cartoon"
+                    style="@style/search_top"
+                    android:text="动漫" />
+
+                <TextView
+                    android:id="@+id/search_art"
+                    style="@style/search_top"
+                    android:text="综艺" />
+
+                <TextView
+                    android:id="@+id/search_doc"
+                    style="@style/search_top"
+                    android:text="记录" />
+                -->
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/sm_5"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/sm_5"
+            android:layout_marginLeft="@dimen/sm_35"
+            android:layout_marginRight="@dimen/sm_35"
+            android:layout_marginTop="@dimen/sm_5"
+            android:scaleType="fitXY"
+            android:src="@drawable/vod_line761" />
+
+        <GridView
+            android:id="@+id/search_result"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/sm_30"
+            android:layout_marginRight="@dimen/sm_35"
+            android:focusableInTouchMode="true"
+            android:numColumns="4"
+            android:scrollbars="none"
+            android:verticalSpacing="@dimen/sm_20" />
+
+        <TextView
+            android:id="@+id/search_empty_text"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="暂无搜索结果"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/sm_30" />
+    </LinearLayout>
+
+</LinearLayout>

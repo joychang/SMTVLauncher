@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/black" >
+
+    <com.baidu.cyberplayer.core.BVideoView
+        android:id="@+id/b_video_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+    </com.baidu.cyberplayer.core.BVideoView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <com.shenma.tvlauncher.view.PlayerProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="@dimen/sm_120"
+            android:layout_height="@dimen/sm_120"
+            android:layout_gravity="center_horizontal"
+            android:indeterminate="false"
+            android:indeterminateDrawable="@drawable/custom_progress_draw" >
+        </com.shenma.tvlauncher.view.PlayerProgressBar>
+
+        <TextView
+            android:id="@+id/tv_mv_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sm_38"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_progress_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/sm_20"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textSize="@dimen/sm_48"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_item"
+    android:layout_width="@dimen/sm_446"
+    android:layout_height="@dimen/sm_50"
+    android:background="@drawable/listview_item_bg_selector" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/sm_10"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tv_back_time"
+            android:layout_width="@dimen/sm_60"
+            android:layout_height="wrap_content"
+            android:text="12:34"
+            android:textColor="@drawable/channel_item_textcolor_selector"
+            android:textSize="@dimen/sm_18" />
+
+        <TextView
+            android:id="@+id/tv_back_name"
+            android:layout_width="@dimen/sm_550"
+            android:layout_height="@dimen/sm_50"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="这里是栏目的名称"
+            android:textColor="@drawable/channel_item_textcolor_selector"
+            android:textSize="@dimen/sm_24" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/tv_back_log"
+        android:layout_width="@dimen/sm_65"
+        android:layout_height="@dimen/sm_35"
+        android:layout_gravity="right|center"
+        android:layout_marginRight="@dimen/sm_10"
+        android:src="@drawable/huikan" />
+
+</FrameLayout>

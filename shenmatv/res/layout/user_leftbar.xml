@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/iv_user"
+        style="@style/user_leftbar_full"
+        android:text="我的账户" />
+
+    <TextView
+        android:id="@+id/iv_user_alert"
+        style="@style/user_leftbar_full"
+        android:text="我的追剧" />
+
+    <TextView
+        android:id="@+id/iv_user_collect"
+        style="@style/user_leftbar_full"
+        android:text="我的收藏" />
+
+    <TextView
+        android:id="@+id/iv_user_history"
+        style="@style/user_leftbar_full"
+        android:text="历史播放" />
+
+    <TextView
+        android:id="@+id/iv_user_app"
+        style="@style/user_leftbar_full"
+        android:text="常用应用" />
+
+</LinearLayout>

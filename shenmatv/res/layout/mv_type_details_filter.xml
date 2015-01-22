@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sm_2"
+        android:focusable="false"
+        android:src="@drawable/fliter_line_hor" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sm_300"
+        android:background="@drawable/fliter_bg"
+        android:descendantFocusability="beforeDescendants"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/filter_rank"
+            android:layout_width="@dimen/sm_182"
+            android:layout_height="fill_parent"
+            android:descendantFocusability="beforeDescendants"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/sm_1"
+                android:layout_height="fill_parent"
+                android:focusable="false"
+                android:scaleType="fitXY"
+                android:src="@drawable/filter_line_ver" />
+
+            <LinearLayout
+                android:layout_width="@dimen/sm_180"
+                android:layout_height="fill_parent"
+                android:descendantFocusability="beforeDescendants"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="@dimen/sm_180"
+                    android:layout_height="@dimen/sm_60"
+                    android:gravity="center"
+                    android:text="搜索"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sm_30" />
+
+                <ImageView
+                    android:layout_width="@dimen/sm_180"
+                    android:layout_height="@dimen/sm_1"
+                    android:focusable="false"
+                    android:src="@drawable/fliter_line_hor" />
+
+                <ListView
+                    android:id="@+id/filter_list_seach"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:divider="#ff000000"
+                    android:nextFocusRight="@+id/filter_list_type"
+                    android:nextFocusUp="@id/filter_list_seach" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="@dimen/sm_1"
+                android:layout_height="fill_parent"
+                android:focusable="false"
+                android:scaleType="fitXY"
+                android:src="@drawable/filter_line_ver" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/filter_type"
+            android:layout_width="@dimen/sm_181"
+            android:layout_height="fill_parent"
+            android:descendantFocusability="beforeDescendants"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="@dimen/sm_180"
+                android:layout_height="fill_parent"
+                android:descendantFocusability="beforeDescendants"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="@dimen/sm_180"
+                    android:layout_height="@dimen/sm_60"
+                    android:gravity="center"
+                    android:text="类型"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sm_30" />
+
+                <ImageView
+                    android:layout_width="@dimen/sm_180"
+                    android:layout_height="@dimen/sm_1"
+                    android:focusable="false"
+                    android:src="@drawable/fliter_line_hor" />
+
+                <ListView
+                    android:id="@+id/filter_list_type"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:divider="#ff000000"
+                    android:nextFocusLeft="@id/filter_list_seach"
+                    android:nextFocusRight="@+id/filter_list_year"
+                    android:nextFocusUp="@id/filter_list_type" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="@dimen/sm_1"
+                android:layout_height="fill_parent"
+                android:focusable="false"
+                android:scaleType="fitXY"
+                android:src="@drawable/filter_line_ver" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/filter_year"
+            android:layout_width="@dimen/sm_181"
+            android:layout_height="fill_parent"
+            android:descendantFocusability="beforeDescendants"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="@dimen/sm_180"
+                android:layout_height="fill_parent"
+                android:descendantFocusability="beforeDescendants"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_filter_year"
+                    android:layout_width="@dimen/sm_180"
+                    android:layout_height="@dimen/sm_60"
+                    android:gravity="center"
+                    android:text="年份"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sm_30" />
+
+                <ImageView
+                    android:layout_width="@dimen/sm_180"
+                    android:layout_height="@dimen/sm_1"
+                    android:focusable="false"
+                    android:src="@drawable/fliter_line_hor" />
+
+                <ListView
+                    android:id="@+id/filter_list_year"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:divider="#ff000000"
+                    android:nextFocusLeft="@id/filter_list_type"
+                    android:nextFocusRight="@+id/filter_list_area"
+                    android:nextFocusUp="@id/filter_list_year" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="@dimen/sm_1"
+                android:layout_height="fill_parent"
+                android:focusable="false"
+                android:scaleType="fitXY"
+                android:src="@drawable/filter_line_ver" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/filter_area"
+            android:layout_width="@dimen/sm_181"
+            android:layout_height="fill_parent"
+            android:descendantFocusability="beforeDescendants"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="@dimen/sm_180"
+                android:layout_height="fill_parent"
+                android:descendantFocusability="beforeDescendants"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="@dimen/sm_180"
+                    android:layout_height="@dimen/sm_60"
+                    android:gravity="center"
+                    android:text="地区"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sm_30" />
+
+                <ImageView
+                    android:layout_width="@dimen/sm_180"
+                    android:layout_height="@dimen/sm_1"
+                    android:focusable="false"
+                    android:src="@drawable/fliter_line_hor" />
+
+                <ListView
+                    android:id="@+id/filter_list_area"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:divider="#ff000000"
+                    android:nextFocusLeft="@id/filter_list_year"
+                    android:nextFocusRight="@id/filter_list_area"
+                    android:nextFocusUp="@id/filter_list_area" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="@dimen/sm_1"
+                android:layout_height="fill_parent"
+                android:focusable="false"
+                android:scaleType="fitXY"
+                android:src="@drawable/filter_line_ver" />
+        </LinearLayout>
+        <!--
+             <LinearLayout
+            android:id="@+id/filter_sort"
+            android:layout_width="18@dimen/sm_1"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="@dimen/sm_180"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="@dimen/sm_180"
+                    android:layout_height="@dimen/sm_60"
+                    android:gravity="center"
+                    android:text="排序"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sm_30" />
+
+                <ImageView
+                    android:layout_width="@dimen/sm_180"
+                    android:layout_height="@dimen/sm_1"
+                    android:src="@drawable/fliter_line_hor" />
+
+                <ListView
+                    android:id="@+id/filter_list_sort"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:divider="#ff000000" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="@dimen/sm_1"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/filter_line_ver" />
+        </LinearLayout>
+        -->
+    </LinearLayout>
+
+</LinearLayout>

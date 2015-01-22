@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/sm_320"
+    android:layout_height="@dimen/sm_210"
+    android:layout_gravity="center"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="@dimen/sm_320"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/sm_4"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wifi_ap_name"
+            android:textSize="@dimen/sm_23" />
+
+        <EditText
+            android:id="@+id/wifi_ap_name_et"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/sm_31"
+            android:layout_marginLeft="@dimen/sm_20"
+            android:background="@drawable/edit_bg"
+            android:singleLine="true"
+            android:text="@string/input_wifi_ap_name"
+            android:textSize="@dimen/sm_23" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/wifi_ap_secure_rl"
+        android:layout_width="@dimen/sm_320"
+        android:layout_height="@dimen/sm_41"
+        android:layout_marginTop="@dimen/sm_5"
+        android:background="@drawable/selector_seetting_play_item_bg"
+        android:focusable="true"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:text="@string/wifi_secure_type"
+            android:textSize="@dimen/sm_23" />
+
+        <ImageButton
+            android:id="@+id/wifi_ap_secure_right_arrows"
+            android:layout_width="@dimen/sm_30"
+            android:layout_height="@dimen/sm_30"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/sm_16"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/select_right_arrows_n" />
+
+        <TextView
+            android:id="@+id/wifi_ap_secure_decode_text"
+            android:layout_width="@dimen/sm_115"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/wifi_ap_secure_right_arrows"
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="@dimen/sm_23" />
+
+        <ImageButton
+            android:id="@+id/wifi_ap_secure_left_arrows"
+            android:layout_width="@dimen/sm_30"
+            android:layout_height="@dimen/sm_30"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/wifi_ap_secure_decode_text"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/select_left_arrows_n" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sm_5"
+        android:paddingLeft="@dimen/sm_4"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/sm_31"
+            android:gravity="center_vertical"
+            android:text="@string/wifi_ssid_pass"
+            android:textSize="@dimen/sm_23" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sm_20" >
+
+            <EditText
+                android:id="@+id/wifi_ap_pass_et"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/sm_31"
+                android:background="@drawable/edit_bg"
+                android:singleLine="true"
+                android:text="@string/default_wifi_ap_pass"
+                android:textSize="@dimen/sm_23" />
+
+            <CheckBox
+                android:id="@+id/wifi_ap_showpass_cb"
+                style="@style/MyCheckBox"
+                android:layout_width="@dimen/sm_18"
+                android:layout_height="@dimen/sm_15"
+                android:layout_below="@id/wifi_ap_pass_et"
+                android:layout_marginTop="@dimen/sm_10"
+                android:checked="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/wifi_ap_pass_et"
+                android:layout_marginLeft="@dimen/sm_10"
+                android:layout_marginTop="@dimen/sm_4"
+                android:layout_toRightOf="@id/wifi_ap_showpass_cb"
+                android:text="@string/show_pass"
+                android:textSize="@dimen/sm_20" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

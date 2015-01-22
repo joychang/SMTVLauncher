@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/my_app_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/iv_local_app"
+            android:layout_width="@dimen/sm_220"
+            android:layout_height="@dimen/sm_80"
+            android:src="@drawable/local_app" />
+
+        <ImageView
+            android:id="@+id/iv_line760"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/sm_5"
+            android:layout_marginBottom="@dimen/sm_5"
+            android:scaleType="fitXY"
+            android:src="@drawable/vod_line761" />
+
+        <GridView
+            android:id="@+id/my_app_manage_gv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/sm_160"
+            android:layout_marginRight="@dimen/sm_20"
+            android:layout_marginTop="@dimen/sm_50"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="6"
+            android:paddingBottom="@dimen/sm_100"
+            android:scrollbars="none" />
+        <!-- android:listSelector="@drawable/app_manage_selector" -->
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="right"
+        android:paddingBottom="@dimen/sm_5"
+        android:paddingRight="@dimen/sm_30"
+        android:paddingTop="@dimen/sm_5"
+        android:text="@string/my_app_bottom_txt"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sm_23" />
+
+    <ImageView
+        android:id="@+id/blue_border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pearl_blue_border"
+        android:visibility="invisible" />
+
+</FrameLayout>

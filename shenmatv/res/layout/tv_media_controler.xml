@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/media_controler_background"
+    android:gravity="bottom"
+    android:padding="@dimen/sm_10"
+    android:orientation="vertical" >
+
+      <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/sm_10"
+            android:layout_marginLeft="@dimen/sm_30"
+            android:layout_marginRight="@dimen/sm_20"
+            android:layout_marginTop="@dimen/sm_10"
+            android:progress="0"
+            android:progressDrawable="@drawable/seek_bar"
+            android:secondaryProgress="0"
+            android:thumb="@null" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sm_10" >
+            
+         <TextView
+            android:id="@+id/tv_currentTime"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/sm_35"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/sm_30"
+            android:text="00:00:00"
+            android:textSize="@dimen/sm_22" />
+
+        <TextView
+            android:id="@+id/tv_dividing_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@id/tv_currentTime"
+            android:text="/"
+            android:textSize="@dimen/sm_22" />
+
+        <TextView
+            android:id="@+id/tv_totalTime"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/sm_35"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@id/tv_dividing_line"
+            android:text="00:00:00"
+            android:textSize="@dimen/sm_22" />
+
+        <TextView
+            android:id="@+id/tv_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/sm_35"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/sm_20"
+            android:text="菜单更多设置"
+            android:textSize="@dimen/sm_22" />
+        </RelativeLayout>
+</LinearLayout>

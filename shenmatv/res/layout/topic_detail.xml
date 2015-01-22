@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/topic_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/video_details_bg" />
+
+    <LinearLayout
+        android:id="@+id/ll_topic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="@dimen/sm_360"
+            android:layout_height="match_parent"
+            android:background="@drawable/topic_left_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_topic_poster"
+                android:layout_width="@dimen/sm_267"
+                android:layout_height="@dimen/sm_405"
+                android:layout_marginTop="@dimen/sm_60"
+                android:scaleType="fitStart" />
+
+            <TextView
+                android:id="@+id/tv_topic_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sm_60"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sm_36" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Gallery
+                android:id="@+id/topic_detail_gl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/sm_43"
+                android:gravity="right|center_vertical"
+                android:spacing="@dimen/sm_10" />
+
+            <TextView
+                android:id="@+id/topic_detail_msg_tv"
+                android:layout_width="@dimen/sm_550"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/topic_detail_gl"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/sm_100"
+                android:layout_marginRight="@dimen/sm_30"
+                android:gravity="right"
+                android:textColor="@color/dark_404040"
+                android:textSize="@dimen/sm_20" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- <ImageView
+        android:id="@+id/topic_focus_image"
+        android:layout_width="@dimen/sm_240"
+        android:layout_height="@dimen/sm_229"
+        android:src="@drawable/topic_focus" 
+        android:layout_marginTop="@dimen/sm_450"
+        android:layout_marginLeft="@dimen/sm_720"
+        android:focusable="false"/> -->
+
+</FrameLayout>

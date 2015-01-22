@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/sm_500"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="@dimen/sm_500"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/sm_5"
+        android:background="@drawable/menu_bg_n"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/sm_5" >
+
+        <TextView
+            android:id="@+id/tv_exit_msg_titile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sm_22" />
+
+        <LinearLayout
+            android:id="@+id/itv_exit_msg"
+            android:layout_width="@dimen/sm_500"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+<!--             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/sm_5"
+                android:text="@string/exitdialog_qin"
+                android:textColor="@color/detail_point"
+                android:textSize="@dimen/sm_52" /> -->
+
+            <TextView
+                android:id="@+id/tv_exit_msg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/sm_15"
+                android:paddingRight="@dimen/sm_15"
+                android:paddingTop="@dimen/sm_10"
+                android:paddingBottom="@dimen/sm_10"
+                android:layout_gravity="center"
+                android:minLines="2"
+                android:textColor="@color/detail_point"
+                android:textSize="@dimen/sm_26" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lv_exit_ok"
+        android:layout_width="@dimen/sm_500"
+        android:layout_height="@dimen/sm_70"
+        android:background="@drawable/menu_bg_selector"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="@dimen/sm_70"
+            android:layout_height="@dimen/sm_70"
+            android:scaleType="fitXY"
+            android:src="@drawable/itv_exit_ok" />
+
+        <TextView
+            android:id="@+id/tv_exit_confirm"
+            android:layout_width="0.0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="@string/exitdialog_out"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sm_26" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lv_exit_cancle"
+        android:layout_width="@dimen/sm_500"
+        android:layout_height="@dimen/sm_70"
+        android:layout_marginTop="@dimen/sm_5"
+        android:background="@drawable/menu_bg_selector"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="@dimen/sm_70"
+            android:layout_height="@dimen/sm_70"
+            android:scaleType="fitXY"
+            android:src="@drawable/itv_exit_cancle" />
+
+        <TextView
+            android:id="@+id/tv_exit_cancle"
+            android:layout_width="0.0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="@string/exitdialog_back"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sm_26" />
+    </LinearLayout>
+
+</LinearLayout>

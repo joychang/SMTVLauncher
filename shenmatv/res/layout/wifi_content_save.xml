@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/sm_320"
+    android:layout_height="@dimen/sm_210"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wifi_ssid_name"
+            android:textSize="@dimen/sm_23" />
+
+        <TextView
+            android:id="@+id/wifi_save_ssid_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sm_20"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:textSize="@dimen/sm_23" />
+    </LinearLayout>
+
+</LinearLayout>

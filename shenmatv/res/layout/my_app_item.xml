@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="afterDescendants"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/sm_20"
+    android:paddingLeft="@dimen/sm_20"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tv_bg_selector"
+        android:descendantFocusability="afterDescendants"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="0.0px"
+            android:layout_y="0.0px"
+            android:descendantFocusability="blocksDescendants" >
+
+            <ImageView
+                android:id="@+id/app_icon"
+                android:layout_width="@dimen/sm_120"
+                android:layout_height="@dimen/sm_80"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/packflag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/app_title"
+            style="@style/marqueeText"
+            android:layout_width="@dimen/sm_120"
+            android:layout_height="@dimen/sm_28"
+            android:layout_gravity="bottom"
+            android:textColor="#ffffffff"
+            android:gravity="center"
+            android:textSize="@dimen/sm_18" />
+    </LinearLayout>
+
+</AbsoluteLayout>

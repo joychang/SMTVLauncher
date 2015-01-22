@@ -1,0 +1,104 @@
+-optimizationpasses 5
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-dontpreverify
+-verbose
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+
+-libraryjars libs/android-support-v4.jar
+-libraryjars libs/afinal-0.3.32-bin.jar
+-libraryjars libs/cyberplayer-sdk.jar
+-libraryjars libs/gson-2.2.4.jar
+-libraryjars libs/universal-image-loader-1.8.6.jar
+#-libraryjars libs/volley.jar
+-libraryjars libs/AndroidHttpServer-1.0.3.jar
+-libraryjars ext-libs/android-hisi3716Mv300.jar
+-libraryjars libs/umeng-sdk.jar
+-libraryjars libs/shenma.jar
+-libraryjars libs/lisenencoder.jar
+
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Application
+-keep public class * extends android.app.Service
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class * extends android.content.ContentProvider
+-keep public class * extends android.app.backup.BackupAgentHelper
+-keep public class * extends android.preference.Preference
+-keep public class com.android.vending.licensing.ILicensingService
+
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
+
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet);
+}
+
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+}
+
+-keepclassmembers class * extends android.app.Activity {
+   public void *(android.view.View);
+}
+
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+-keep class * implements android.os.Parcelable {
+  public static final android.os.Parcelable$Creator *;
+}
+
+-keepattributes Signature
+
+#-keep class com.shenma.tvlauncher.network.**{*;}
+
+-keep class com.shenma.tvlauncher.network.GsonRequest {*;}
+
+-keep class com.shenma.tvlauncher.domain.** {*;}
+
+-keep class com.shenma.tvlauncher.vod.db.** {*;}
+
+-keep class com.shenma.tvlauncher.tvback.domain.** {*;}
+
+-keep class com.shenma.tvlauncher.vod.domain.** {*;}
+
+-keep class com.shenma.tvlauncher.dao.bean.** {*;}
+
+-dontwarn android.support.v4.**
+-keep class android.support.v4.** {*;}
+
+-dontwarn com.nostra13.universalimageloader.**
+-keep class com.nostra13.universalimageloader.** {*;}
+
+-dontwarn com.android.volley.**
+-keep class com.android.volley.** {*;}
+
+-dontwarn net.tsz.afinal.**
+-keep class net.tsz.afinal.** {*;}
+
+-dontwarn com.google.gson.**
+-keep class com.google.gson.** {*;}
+
+-dontwarn com.baidu.cyberplayer.**
+-keep class com.baidu.cyberplayer.** {*;}
+
+-dontwarn com.umeng.**
+-keep class com.umeng.** {*;}
+
+-dontwarn android.**
+-keep class android.** {*;}
+
+-dontwarn com.wepower.**
+-keep class com.wepower.live.parser.** {*;}
+
+-dontwarn com.lisen.**
+-keep class com.lisen.** {*;}
+
+-dontwarn net.sunniwell.android.httpserver.**
+-keep class net.sunniwell.android.httpserver.** {*;}
+
+-dontwarn org.apache.commons.fileupload.**
+-keep class org.apache.commons.fileupload.** {*;}

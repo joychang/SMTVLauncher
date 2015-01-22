@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sm_55"
+        android:gravity="center_vertical"
+        android:background="@drawable/live_channel_list_item_bg" >
+
+        <TextView
+            android:id="@+id/fourlink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="@dimen/sm_40"
+            android:singleLine="true"
+            android:textColor="@drawable/live_channel_item_textcolor_selector"
+            android:textSize="@dimen/sm_28" />
+    </RelativeLayout>
+
+</LinearLayout>

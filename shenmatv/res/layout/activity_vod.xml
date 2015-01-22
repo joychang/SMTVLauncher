@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/vod"
+    >
+
+    <RelativeLayout
+        android:id="@+id/type_details"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/sm_35"
+        android:paddingRight="@dimen/sm_35"
+        android:paddingTop="@dimen/sm_10" >
+
+        <LinearLayout
+            android:id="@+id/ll_type_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/type_details_type"
+                android:layout_width="@dimen/sm_150"
+                android:layout_height="@dimen/sm_80"
+                android:src="@drawable/vod_tvplay" />
+
+            <ImageView
+                android:layout_width="@dimen/sm_10"
+                android:layout_height="@dimen/sm_80"
+                android:layout_marginRight="@dimen/sm_5"
+                android:src="@drawable/vod_line35" />
+
+            <TextView
+                android:id="@+id/type_details_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/sm_2"
+                android:layout_marginTop="@dimen/sm_5"
+                android:text="@string/type_details_sum"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sm_32" />
+            <!-- android:textColor="#ff404040" -->
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/type_details_fliter"
+            android:layout_width="@dimen/sm_140"
+            android:layout_height="@dimen/sm_70"
+            android:layout_above="@+id/iv_line760"
+            android:focusable="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/video_details_menu_selector" />
+
+        <ImageView
+            android:id="@+id/iv_line760"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/sm_5"
+            android:layout_below="@+id/ll_type_details"
+            android:layout_marginBottom="@dimen/sm_5"
+            android:scaleType="fitXY"
+            android:src="@drawable/vod_line761" />
+
+        <GridView
+            android:id="@+id/type_details_grid"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/iv_line760"
+            android:numColumns="6"
+            android:scrollbars="none"
+            android:scrollingCache="true"
+            android:smoothScrollbar="true"
+            android:stretchMode="columnWidth" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/type_details_menulayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/mv_type_details_filter"
+        android:visibility="gone" />
+
+</FrameLayout>

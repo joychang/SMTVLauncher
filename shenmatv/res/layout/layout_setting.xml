@@ -1,0 +1,234 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sm_425"
+        android:gravity="center" >
+
+        <!-- 倒影 -->
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/sm_40" >
+
+        <FrameLayout
+            android:id="@+id/setting_fl_re_0"
+            android:layout_width="@dimen/sm_239"
+            android:layout_height="@dimen/sm_241"
+            android:layout_marginLeft="@dimen/sm_200" >
+
+            <ImageView
+                android:id="@+id/setting_bg_0"
+                android:layout_width="@dimen/sm_239"
+                android:layout_height="@dimen/sm_241"
+                android:scaleType="centerInside"
+                android:src="@drawable/setting_bbg"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/setting_iv_remote"
+                android:layout_width="@dimen/sm_199"
+                android:layout_height="@dimen/sm_201"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:nextFocusUp="@id/rb_settings"
+                android:scaleType="fitXY"
+                android:src="@drawable/remote" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/setting_fl_re_1"
+            android:layout_width="@dimen/sm_239"
+            android:layout_height="@dimen/sm_241"
+            android:layout_marginLeft="@dimen/sm_200"
+            android:layout_marginTop="@dimen/sm_197" >
+
+            <ImageView
+                android:id="@+id/setting_bg_1"
+                android:layout_width="@dimen/sm_239"
+                android:layout_height="@dimen/sm_241"
+                android:scaleType="fitXY"
+                android:src="@drawable/setting_bbg"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/setting_iv_network"
+                android:layout_width="@dimen/sm_199"
+                android:layout_height="@dimen/sm_201"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:nextFocusDown="@id/rb_bm_tvplay"
+                android:scaleType="fitXY"
+                android:src="@drawable/network" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/setting_fl_re_2"
+            android:layout_width="@dimen/sm_239"
+            android:layout_height="@dimen/sm_241"
+            android:layout_marginLeft="@dimen/sm_395" >
+
+            <ImageView
+                android:id="@+id/setting_bg_2"
+                android:layout_width="@dimen/sm_239"
+                android:layout_height="@dimen/sm_241"
+                android:scaleType="fitXY"
+                android:src="@drawable/setting_bbg"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/setting_iv_play"
+                android:layout_width="@dimen/sm_199"
+                android:layout_height="@dimen/sm_201"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:nextFocusUp="@id/rb_settings"
+                android:scaleType="fitXY"
+                android:src="@drawable/play" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/setting_fl_re_3"
+            android:layout_width="@dimen/sm_239"
+            android:layout_height="@dimen/sm_241"
+            android:layout_marginLeft="@dimen/sm_395"
+            android:layout_marginTop="@dimen/sm_197" >
+
+            <ImageView
+                android:id="@+id/setting_bg_3"
+                android:layout_width="@dimen/sm_239"
+                android:layout_height="@dimen/sm_241"
+                android:scaleType="fitXY"
+                android:src="@drawable/setting_bbg"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/setting_iv_clean"
+                android:layout_width="@dimen/sm_199"
+                android:layout_height="@dimen/sm_201"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:nextFocusDown="@id/rb_bm_tvplay"
+                android:scaleType="fitXY"
+                android:src="@drawable/clean" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/setting_fl_re_4"
+            android:layout_width="@dimen/sm_239"
+            android:layout_height="@dimen/sm_241"
+            android:layout_marginLeft="@dimen/sm_590" >
+
+            <ImageView
+                android:id="@+id/setting_bg_4"
+                android:layout_width="@dimen/sm_239"
+                android:layout_height="@dimen/sm_241"
+                android:scaleType="fitXY"
+                android:src="@drawable/setting_bbg"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/setting_iv_wallpaper"
+                android:layout_width="@dimen/sm_199"
+                android:layout_height="@dimen/sm_201"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:nextFocusUp="@id/rb_settings"
+                android:scaleType="fitXY"
+                android:src="@drawable/gexing" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/setting_fl_re_5"
+            android:layout_width="@dimen/sm_239"
+            android:layout_height="@dimen/sm_241"
+            android:layout_marginLeft="@dimen/sm_590"
+            android:layout_marginTop="@dimen/sm_197" >
+
+            <ImageView
+                android:id="@+id/setting_bg_5"
+                android:layout_width="@dimen/sm_239"
+                android:layout_height="@dimen/sm_241"
+                android:scaleType="fitXY"
+                android:src="@drawable/setting_bbg"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/setting_iv_other"
+                android:layout_width="@dimen/sm_199"
+                android:layout_height="@dimen/sm_201"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:nextFocusDown="@id/rb_bm_tvplay"
+                android:scaleType="fitXY"
+                android:src="@drawable/settings" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/setting_fl_re_6"
+            android:layout_width="@dimen/sm_239"
+            android:layout_height="@dimen/sm_241"
+            android:layout_marginLeft="@dimen/sm_785" >
+
+            <ImageView
+                android:id="@+id/setting_bg_6"
+                android:layout_width="@dimen/sm_239"
+                android:layout_height="@dimen/sm_241"
+                android:scaleType="fitXY"
+                android:src="@drawable/setting_bbg"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/setting_iv_act"
+                android:layout_width="@dimen/sm_199"
+                android:layout_height="@dimen/sm_201"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:nextFocusUp="@id/rb_settings"
+                android:scaleType="fitXY"
+                android:src="@drawable/huodong" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/setting_fl_re_7"
+            android:layout_width="@dimen/sm_239"
+            android:layout_height="@dimen/sm_241"
+            android:layout_marginLeft="@dimen/sm_785"
+            android:layout_marginTop="@dimen/sm_197" >
+
+            <ImageView
+                android:id="@+id/setting_bg_7"
+                android:layout_width="@dimen/sm_239"
+                android:layout_height="@dimen/sm_241"
+                android:scaleType="fitXY"
+                android:src="@drawable/setting_bbg"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/setting_iv_about"
+                android:layout_width="@dimen/sm_199"
+                android:layout_height="@dimen/sm_201"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:nextFocusDown="@id/rb_bm_tvplay"
+                android:scaleType="fitXY"
+                android:src="@drawable/about" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</FrameLayout>

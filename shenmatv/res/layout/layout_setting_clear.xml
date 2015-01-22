@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/setting_clear">
+
+    <ImageView
+        android:layout_width="@dimen/sm_220"
+        android:layout_height="@dimen/sm_80"
+        android:layout_marginLeft="@dimen/sm_12"
+        android:layout_marginTop="@dimen/sm_16"
+        android:src="@drawable/jlql_play" />
+
+    <RelativeLayout
+        android:id="@+id/main_rl"
+        android:layout_width="@dimen/sm_850"
+        android:layout_height="@dimen/sm_400"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:paddingTop="@dimen/sm_50" >
+
+        <RelativeLayout
+            android:id="@+id/clear_setting_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/clear_setting_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/clear_setting_top" >
+
+            <RelativeLayout
+                android:id="@+id/clear_setting_content_decode"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sm_65"
+                android:layout_marginLeft="@dimen/sm_32"
+                android:layout_marginRight="@dimen/sm_32"
+                android:background="@drawable/selector_seetting_play_item_bg"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:nextFocusLeft="@id/clear_setting_content_decode"
+                android:paddingBottom="@dimen/sm_8" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/sm_16"
+                    android:gravity="center_vertical"
+                    android:text="@string/image_cache"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/sm_24" />
+
+                <TextView
+                    android:id="@+id/image_cache_clear_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/sm_16"
+                    android:background="@drawable/bg_s"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/sm_10"
+                    android:paddingRight="@dimen/sm_10"
+                    android:text="@string/clear"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sm_24" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/clear_setting_content_definition"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sm_65"
+                android:layout_below="@id/clear_setting_content_decode"
+                android:layout_marginLeft="@dimen/sm_32"
+                android:layout_marginRight="@dimen/sm_32"
+                android:background="@drawable/selector_seetting_play_item_bg"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:nextFocusLeft="@id/clear_setting_content_definition"
+                android:paddingBottom="@dimen/sm_8" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/sm_16"
+                    android:gravity="center_vertical"
+                    android:text="@string/collection_record"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/sm_24" />
+
+                <TextView
+                    android:id="@+id/collection_clear_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/sm_16"
+                    android:background="@drawable/bg_s"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/sm_10"
+                    android:paddingRight="@dimen/sm_10"
+                    android:text="@string/clear"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sm_24" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/clear_setting_content_playratio"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sm_65"
+                android:layout_below="@id/clear_setting_content_definition"
+                android:layout_marginLeft="@dimen/sm_32"
+                android:layout_marginRight="@dimen/sm_32"
+                android:background="@drawable/selector_seetting_play_item_bg"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:nextFocusLeft="@id/clear_setting_content_playratio"
+                android:paddingBottom="@dimen/sm_8" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/sm_16"
+                    android:gravity="center_vertical"
+                    android:text="@string/play_record"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/sm_24" />
+
+                <TextView
+                    android:id="@+id/clear_cache_clear_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/sm_16"
+                    android:background="@drawable/bg_s"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/sm_10"
+                    android:paddingRight="@dimen/sm_10"
+                    android:text="@string/clear"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sm_24" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/clear_setting_content_jump"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sm_65"
+                android:layout_below="@id/clear_setting_content_playratio"
+                android:layout_marginLeft="@dimen/sm_32"
+                android:layout_marginRight="@dimen/sm_32"
+                android:background="@drawable/selector_seetting_play_item_bg"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:nextFocusLeft="@id/clear_setting_content_jump"
+                android:paddingBottom="@dimen/sm_8" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/sm_16"
+                    android:gravity="center_vertical"
+                    android:text="@string/alert_record"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/sm_24" />
+
+                <TextView
+                    android:id="@+id/alert_cache_clear_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/sm_16"
+                    android:background="@drawable/bg_s"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/sm_10"
+                    android:paddingRight="@dimen/sm_10"
+                    android:text="@string/clear"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sm_24" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/clear_setting_other"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sm_65"
+                android:layout_below="@id/clear_setting_content_jump"
+                android:layout_marginLeft="@dimen/sm_32"
+                android:layout_marginRight="@dimen/sm_32"
+                android:background="@drawable/selector_seetting_play_item_bg"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:nextFocusLeft="@id/clear_setting_content_jump"
+                android:paddingBottom="@dimen/sm_8" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/sm_16"
+                    android:gravity="center_vertical"
+                    android:text="@string/diy_tvstation"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/sm_24" />
+
+                <TextView
+                    android:id="@+id/diy_cache_clear_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/sm_16"
+                    android:background="@drawable/bg_s"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/sm_10"
+                    android:paddingRight="@dimen/sm_10"
+                    android:text="@string/clear"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sm_24" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sm_600"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/all_cache_clear_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/clear_button_selector"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:padding="@dimen/sm_10"
+            android:text="@string/clear_all"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sm_24" />
+    </RelativeLayout>
+
+</RelativeLayout>

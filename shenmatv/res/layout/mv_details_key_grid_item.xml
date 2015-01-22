@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/gv_text"
+        android:layout_width="@dimen/sm_130"
+        android:layout_height="@dimen/sm_55"
+        android:layout_margin="@dimen/sm_3"
+        android:background="@drawable/wifi_dialog_bt_selector"
+        android:ellipsize="marquee"
+        android:gravity="center_horizontal|center_vertical"
+        android:marqueeRepeatLimit="3"
+        android:paddingLeft="@dimen/sm_5"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sm_20" />
+
+</RelativeLayout>

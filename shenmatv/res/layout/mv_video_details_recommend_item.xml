@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/sm_175"
+    android:layout_height="@dimen/sm_256"
+    android:background="@drawable/video_bg_selector" >
+
+    <ImageView
+        android:id="@+id/details_recommend_poster"
+        android:layout_width="@dimen/sm_152"
+        android:layout_height="@dimen/sm_224"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_film_img" />
+
+    <TextView
+        android:id="@+id/details_recommend_name"
+        style="@style/marqueeText"
+        android:layout_width="@dimen/sm_152"
+        android:layout_height="@dimen/sm_30"
+        android:layout_gravity="bottom|center"
+        android:background="@drawable/video_textbg_selector"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sm_20" />
+</FrameLayout>
