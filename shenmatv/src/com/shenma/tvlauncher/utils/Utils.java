@@ -11,6 +11,7 @@ import java.net.NetworkInterface;
 import java.net.SocketException;
 import java.net.URL;
 import java.net.URLEncoder;
+import java.text.DecimalFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -55,6 +56,8 @@ import android.graphics.BitmapFactory;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
+import android.os.Handler;
+import android.os.Message;
 import android.provider.Settings;
 import android.provider.Settings.System;
 import android.text.format.Time;
@@ -856,9 +859,10 @@ public class Utils{
 	 * 下载apk文件进行安装
 	 * @author drowtram
 	 * @param context
+	 * @param mHandler 更新显示进度的handler
 	 * @param url
 	 */
-	public static void startDownloadApk(final Context context, final String url){
+	public static void startDownloadApk(final Context context, final String url, final Handler mHandler){
 		Utils.showToast(context, "正在后台下载，完成后提示安装...", R.drawable.toast_smile);
 		new Thread(new Runnable() {
 			@Override
@@ -876,12 +880,22 @@ public class Utils{
 					HttpResponse hResponse = new DefaultHttpClient().execute(hGet);
 					if(hResponse.getStatusLine().getStatusCode() == 200){
 						InputStream is = hResponse.getEntity().getContent();
-						
+						float downsize = 0;
+						if(mHandler != null) {
+							//获取下载的文件大小
+							float size = hResponse.getEntity().getContentLength();
+							mHandler.obtainMessage(1001, size).sendToTarget();//发消息给handler处理更新信息
+						}
 						fos = context.openFileOutput(apkName, Context.MODE_WORLD_READABLE|Context.MODE_WORLD_WRITEABLE);
 						byte[] buffer = new byte[8192];
 						int count = 0;
 						while ((count = is.read(buffer)) != -1) {
-					     fos.write(buffer, 0, count);
+							if(mHandler != null) {
+								downsize += count;
+								mHandler.obtainMessage(1002, downsize).sendToTarget();//发消息给handler处理更新信息
+							}
+							fos.write(buffer, 0, count);
+//							Log.d("zhouchuan", "下载进度"+(int)(downsize/size*100)+"%"+" downsize="+downsize+" size="+size);
 					    }
 						fos.close();
 						is.close();

@@ -1,11 +1,7 @@
 package com.shenma.tvlauncher.fragment;
 
-import java.io.UnsupportedEncodingException;
 import java.lang.reflect.Field;
-
 import com.shenma.tvlauncher.HomeActivity;
-import com.shenma.tvlauncher.utils.Utils;
-
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -14,7 +10,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
-
+/**
+ * @Description 基类
+ * @author joychang
+ *
+ */
 public abstract class BaseFragment extends Fragment {
 
 	@Override

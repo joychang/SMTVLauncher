@@ -105,8 +105,8 @@ public final class MyApplication extends Application {
 		}
 		MyVolley.init(this);//初始化MyVolley
         //bug捕获和bug信息收集
-        CrashHandler crashHandler = CrashHandler.getInstance();          
-        crashHandler.init(this);
+//        CrashHandler crashHandler = CrashHandler.getInstance();          
+//        crashHandler.init(this);
 	}
 	
 	

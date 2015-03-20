@@ -295,4 +295,12 @@
         </RelativeLayout>
     </FrameLayout>
 
+    <TextView
+         android:id="@+id/tv_update_msg"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="@dimen/sm_28"
+         android:layout_gravity="center_horizontal"
+         android:textSize="@dimen/sm_18" />
+    
 </FrameLayout>

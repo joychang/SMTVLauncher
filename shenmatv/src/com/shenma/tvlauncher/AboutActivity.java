@@ -86,7 +86,7 @@ public class AboutActivity extends BaseActivity {
 		}else {
 			BitmapFactory.Options options = new BitmapFactory.Options();
 			options.inJustDecodeBounds = false;
-			options.inPreferredConfig = Bitmap.Config.ARGB_4444;    // 默认是Bitmap.Config.ARGB_8888
+			options.inPreferredConfig = Bitmap.Config.ARGB_8888;    // 默认是Bitmap.Config.ARGB_8888 ARGB_4444不兼容4.4以上版本
 			options.inPurgeable = true;
 			options.inInputShareable = true;
 			try {
@@ -137,7 +137,7 @@ public class AboutActivity extends BaseActivity {
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
 				Utils.showToast(context, R.string.version_updata_downlond, R.drawable.toast_smile);
-				Utils.startDownloadApk(context, updateurl);
+				Utils.startDownloadApk(context, updateurl,null);
 				dialog.dismiss();
 			}
 		});

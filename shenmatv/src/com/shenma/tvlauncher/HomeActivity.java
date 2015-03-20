@@ -389,7 +389,7 @@ public class HomeActivity extends BaseActivity {
 		rb_bm_tvplay = (RadioButton) findViewById(R.id.rb_bm_tvplay);
 		tv_main_date = (TextView) findViewById(R.id.tv_main_date);
 		ll_rb = (LinearLayout) findViewById(R.id.ll_rb);
-		
+		tv_update_msg = (TextView)findViewById(R.id.tv_update_msg);
 		fragments = new ArrayList<Fragment>();
         Bundle args = new Bundle();
         
@@ -806,6 +806,16 @@ public class HomeActivity extends BaseActivity {
 				homeHandler.sendEmptyMessageDelayed(
 						WindowMessageID.REFLESH_TIME, 1000);
 				break;
+			case 1001://软件更新  总大小
+				countSize = (Float)msg.obj;
+				break;
+			case 1002://软件更新  当前下载大小
+				currentSize = (Float)msg.obj;
+				tv_update_msg.setText("正在下载更新 "+(int)(currentSize/countSize*100)+"%");
+				if(currentSize >= countSize) {
+					tv_update_msg.setVisibility(View.GONE);
+				}
+				break;
 
 			}
 		}
@@ -834,7 +844,7 @@ public class HomeActivity extends BaseActivity {
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
 				Utils.showToast(context, R.string.version_updata_downlond, R.drawable.toast_smile);
-				Utils.startDownloadApk(context, updateurl);
+				Utils.startDownloadApk(context, updateurl,homeHandler);
 				dialog.dismiss();
 			}
 		});
@@ -1042,9 +1052,11 @@ public class HomeActivity extends BaseActivity {
 	protected static Boolean ISTV;
 	private static int titile_position  = 0;
 	protected String technology = "";
+	private float countSize;	//软件更新总大小
+	private float currentSize;	//软件更新当前下载进度
 	//private boolean isFromPageChange;
 
-	private TextView tv_main_date;
+	private TextView tv_main_date,tv_update_msg;
 
 	private RecommendFragment rf;
 

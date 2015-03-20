@@ -300,6 +300,9 @@ public class UserActivity extends BaseActivity {
 							tv_filter_content.setVisibility(View.VISIBLE);
 							tv_no_data.setVisibility(View.GONE);
 							userTypeAdapter = new UserTypeAdapter(UserActivity.this, Albumls, imageLoader,ISAPP);
+							if(gv_user_type_details_grid.getVisibility() != View.VISIBLE) {
+								gv_user_type_details_grid.setVisibility(View.VISIBLE);
+							}
 							gv_user_type_details_grid.setAdapter(userTypeAdapter);
 						}else{
 							tv_no_data.setVisibility(View.VISIBLE);

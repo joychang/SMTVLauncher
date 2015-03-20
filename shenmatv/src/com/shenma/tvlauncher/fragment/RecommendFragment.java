@@ -685,7 +685,7 @@ public class RecommendFragment extends BaseFragment implements OnFocusChangeList
 		//如果没有安装，则查询本地是否有安装包文件，有则直接安装
 		if(!Utils.startCheckLoaclApk(home,fileName)){
 			//如果没有安装包  则进行下载安装
-			Utils.startDownloadApk(home,apkurl);
+			Utils.startDownloadApk(home,apkurl,null);
 		}
 	}
 	
